@@ -2,6 +2,7 @@
   "name": "eventstudio",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://MrMatvienko.github.io/EventStudio",
   "type": "module",
   "scripts": {
     "dev": "vite",
