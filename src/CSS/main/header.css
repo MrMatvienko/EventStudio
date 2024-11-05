@@ -9,6 +9,7 @@
   height: 118px;
   box-shadow: 0 4px 7px 0 rgba(144, 144, 144, 0.25);
   background: rgba(240, 238, 238, 0.61);
+  z-index: 10;
 }
 .header-wraper {
   width: 1180px;
