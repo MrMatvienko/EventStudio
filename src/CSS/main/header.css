@@ -10,24 +10,24 @@
   z-index: 10;
 }
 .header-wraper {
-  width: 1180px;
-  padding-left: 130px;
-  padding-right: 130px;
+  padding-left: 21px;
+  padding-right: 21px;
   height: 118px;
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   align-items: center;
 }
-.header ul {
+.header-list-one,
+.header-list-two {
   display: none;
   gap: 32px;
 }
-.header ul li {
+.header-wraper ul li {
   font-size: 20px;
 }
-.header img {
-  width: 220px;
-  height: 86px;
+.header-logo {
+  width: 150px;
+  height: 58px;
 }
 .header-number {
   display: none;
@@ -39,19 +39,116 @@
   line-height: 1.5;
   color: var(--black);
 }
+
+/*--------Mobile-Header-Menu----------*/
+.burger-menu {
+  position: absolute;
+  top: 57px;
+  right: 21px;
+  display: flex;
+  width: 22px;
+  height: 2px;
+  background-color: var(--black);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 20px;
+  z-index: 10;
+}
+
+.burger-menu::before,
+.burger-menu::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 2px;
+  background-color: var(--black);
+  transition: all 0.3s ease;
+}
+
+.burger-menu::before {
+  top: -7px;
+}
+
+.burger-menu::after {
+  width: 19px;
+  bottom: -7px;
+}
+
+.burger-menu.active {
+  background-color: transparent;
+}
+
+.burger-menu.active::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.burger-menu.active::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+.mobile-bar {
+  margin-bottom: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  gap: 120px;
+}
+.is-hidden {
+  display: none;
+}
+.mobile-bar-list {
+  width: 100%;
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-bar-item a {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--black);
+}
+.mobile-bar-item:last-child {
+  margin-top: 40px;
+}
+.mobile-bar-item:hover a {
+  color: #931ed6;
+}
+
 @media screen and (min-width: 1440px) {
-  .header ul {
+  .header-wraper {
+    width: 1180px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 130px;
+    padding-right: 130px;
+    height: 118px;
+  }
+  .header-list-one,
+  .header-list-two {
     display: flex;
     gap: 32px;
   }
-  .header-number {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .header-logo {
+    width: 220px;
+    height: 86px;
   }
   .header-number {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .burger-menu {
+    display: none;
   }
 }
