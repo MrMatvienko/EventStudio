@@ -35,6 +35,7 @@
 .hero-title {
   font-family: var(--second-family);
   font-size: 26px;
+  margin-bottom: 16px;
 }
 .hero-text {
   font-family: var(--second-family);
@@ -47,8 +48,6 @@
   margin-bottom: 32px;
 }
 .hero-btn {
-  font-family: var(--font-family);
-  font-weight: 400;
   font-size: 20px;
   color: var(--white);
   border-radius: 15px;
@@ -65,21 +64,15 @@
     background-image: url(/image/main/hero/hero.jpg);
   }
   .hero-conrainer {
-    position: relative;
     max-width: 1180px;
     padding-left: 130px;
     padding-right: 130px;
-    width: 100%;
-    height: 100%;
   }
   .hero-wraper {
-    position: absolute;
     top: 20%;
     left: 50%;
-    border-radius: 50%;
     width: 1067px;
     height: 1003px;
-    background-color: rgb(229, 227, 228, 0.7);
   }
   .hero-wraper-text {
     max-width: 396px;
@@ -88,33 +81,15 @@
     z-index: 9;
   }
   .hero-title {
-    font-family: var(--second-family);
-    font-weight: 400;
     font-size: 36px;
     color: var(--black);
     margin-bottom: 24px;
   }
   .hero-text {
-    font-family: var(--second-family);
-    font-style: italic;
-    font-weight: 400;
     font-size: 24px;
-    line-height: 150%;
-    letter-spacing: 0.02em;
-    color: var(--black);
     margin-bottom: 44px;
   }
   .hero-btn {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 20px;
-    color: var(--white);
-    border-radius: 15px;
-    border: none;
     width: 292px;
-    height: 70px;
-    box-shadow: 1px 1px 4px 1px rgba(45, 50, 50, 0.31);
-    background: var(--purple);
-    cursor: pointer;
   }
 }
