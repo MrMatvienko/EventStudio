@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 118px;
+  height: 96px;
   box-shadow: 0 4px 7px 0 rgba(144, 144, 144, 0.25);
   background: rgba(240, 238, 238, 0.61);
   z-index: 10;
@@ -43,7 +43,7 @@
 /*--------Mobile-Header-Menu----------*/
 .burger-menu {
   position: absolute;
-  top: 57px;
+  top: 47px;
   right: 21px;
   display: flex;
   width: 22px;
@@ -129,6 +129,9 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .header {
+    height: 118px;
+  }
   .header-wraper {
     width: 1180px;
     display: flex;
