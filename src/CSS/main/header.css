@@ -73,6 +73,9 @@
   width: 19px;
   bottom: -7px;
 }
+.burger-menu.active::after {
+  width: 22px;
+}
 
 .burger-menu.active {
   background-color: transparent;
