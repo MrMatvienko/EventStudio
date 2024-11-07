@@ -1,0 +1,133 @@
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1220px;
+  background: url(/image/main/info/info-back-mob.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+.info-wraper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 362px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.info-wraper ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.info-wraper ul li {
+  width: 285px;
+}
+.info-wraper ul h2 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--pink-text);
+  margin-bottom: 16px;
+}
+.info-wraper ul p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--black);
+}
+.info-quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.info-quote p {
+  font-family: var(--third-family);
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  z-index: 1;
+}
+.info-dab {
+  position: absolute;
+  top: -32px;
+  left: 0;
+  width: 260px;
+  height: 125px;
+  background: url(/image/main/info/info-dab-mob.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+.info-wrpar-img {
+  border-radius: 20px;
+  width: 181px;
+  height: 210px;
+}
+.info-container-img {
+  position: relative;
+  width: 322px;
+  height: 327px;
+  margin-left: 13px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.img-position {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+@media screen and (min-width: 1440px) {
+  .info {
+    margin-top: 40px;
+    height: 863px;
+    background: url(/image/main/info/info-back.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+  .info-wraper {
+    max-width: 1150px;
+    padding-left: 131px;
+    padding-right: 139px;
+    padding-bottom: 109px;
+    margin-top: 80px;
+  }
+  .info-wraper-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 56px;
+    padding-left: 20px;
+  }
+  .info-quote {
+    justify-content: flex-start;
+    margin-bottom: 92px;
+  }
+  .info-quote p {
+    font-size: 32px;
+    line-height: 1.2;
+    max-width: 597px;
+  }
+  .info-wraper ul {
+    gap: 112px;
+  }
+  .info-dab {
+    width: 500px;
+    background: url(/image/main/info/info-dab.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+  }
+  .info-container-img {
+    width: 456px;
+    height: 506px;
+    margin: 0;
+  }
+  .info-wrpar-img {
+    border-radius: 20px;
+    width: 261px;
+    height: 330px;
+  }
+}
