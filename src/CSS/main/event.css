@@ -1,0 +1,198 @@
+.event {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+}
+.event-wraper {
+  max-width: 361px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.event-title {
+  font-family: var(--second-family);
+  font-size: 26px;
+  color: var(--pink-text);
+  margin-bottom: 24px;
+}
+.event-quote {
+  font-family: var(--third-family);
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 48px;
+}
+.event-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+.event-list-img {
+  position: relative;
+  border-radius: 15px;
+  width: 361px;
+  height: 390px;
+  margin-bottom: 16px;
+}
+.img-1 {
+  background: linear-gradient(
+      180deg,
+      rgba(50, 49, 45, 0.7) 0%,
+      rgba(25, 25, 23, 0) 50%,
+      rgba(50, 49, 45, 0.7) 100%
+    ),
+    url("../../image/main/event/event-1.png");
+}
+.img-2 {
+  background: linear-gradient(
+      180deg,
+      rgba(50, 49, 45, 0.7) 0%,
+      rgba(25, 25, 23, 0) 50%,
+      rgba(50, 49, 45, 0.7) 100%
+    ),
+    url("../../image/main/event/event-2.png");
+}
+.img-3 {
+  background: linear-gradient(
+      180deg,
+      rgba(50, 49, 45, 0.7) 0%,
+      rgba(25, 25, 23, 0) 50%,
+      rgba(50, 49, 45, 0.7) 100%
+    ),
+    url("../../image/main/event/event-3.png");
+}
+.img-4 {
+  background: linear-gradient(
+      180deg,
+      rgba(50, 49, 45, 0.7) 0%,
+      rgba(25, 25, 23, 0) 50%,
+      rgba(50, 49, 45, 0.7) 100%
+    ),
+    url("../../image/main/event/event-4.png");
+}
+.img-5 {
+  background: linear-gradient(
+      180deg,
+      rgba(50, 49, 45, 0.7) 0%,
+      rgba(25, 25, 23, 0) 50%,
+      rgba(50, 49, 45, 0.7) 100%
+    ),
+    url("../../image/main/event/event-5.png");
+}
+.img-6 {
+  background: linear-gradient(
+      180deg,
+      rgba(50, 49, 45, 0.7) 0%,
+      rgba(25, 25, 23, 0) 50%,
+      rgba(50, 49, 45, 0.7) 100%
+    ),
+    url("../../image/main/event/event-6.png");
+}
+.img-7 {
+  background: linear-gradient(
+      180deg,
+      rgba(50, 49, 45, 0.7) 0%,
+      rgba(25, 25, 23, 0) 50%,
+      rgba(50, 49, 45, 0.7) 100%
+    ),
+    url("../../image/main/event/event-7.png");
+}
+.img-8 {
+  background: linear-gradient(
+      180deg,
+      rgba(50, 49, 45, 0.7) 0%,
+      rgba(25, 25, 23, 0) 50%,
+      rgba(50, 49, 45, 0.7) 100%
+    ),
+    url("../../image/main/event/event-8.png");
+}
+.img-9 {
+  background: linear-gradient(
+      180deg,
+      rgba(50, 49, 45, 0.7) 0%,
+      rgba(25, 25, 23, 0) 50%,
+      rgba(50, 49, 45, 0.7) 100%
+    ),
+    url("../../image/main/event/event-9.png");
+}
+.img-10 {
+  background: linear-gradient(
+      180deg,
+      rgba(50, 49, 45, 0.7) 0%,
+      rgba(25, 25, 23, 0) 50%,
+      rgba(50, 49, 45, 0.7) 100%
+    ),
+    url("../../image/main/event/event-10.png");
+}
+.img-11 {
+  background: linear-gradient(
+      180deg,
+      rgba(50, 49, 45, 0.7) 0%,
+      rgba(25, 25, 23, 0) 50%,
+      rgba(50, 49, 45, 0.7) 100%
+    ),
+    url("../../image/main/event/event-11.png");
+}
+.img-12 {
+  background: linear-gradient(
+      180deg,
+      rgba(50, 49, 45, 0.7) 0%,
+      rgba(25, 25, 23, 0) 50%,
+      rgba(50, 49, 45, 0.7) 100%
+    ),
+    url("../../image/main/event/event-12.png");
+}
+.event-item-info {
+  padding-top: 16px;
+  padding-left: 16px;
+}
+.event-item-info p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--white);
+}
+.event-info-wraper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.event-info-wraper svg {
+  fill: none;
+  stroke-width: 1.3px;
+  stroke: var(--white);
+}
+.event-item-title {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  font-family: var(--second-family);
+  font-size: 26px;
+  color: var(--white);
+}
+.event-descriptions {
+  font-size: 16px;
+  line-height: 1.5;
+  padding-left: 5px;
+  margin-bottom: 24px;
+  border-left: 1px solid var(--purple);
+}
+.event-btn {
+  border-radius: 15px;
+  width: 173px;
+  height: 70px;
+  border: none;
+  box-shadow: 1px 1px 4px 1px rgba(45, 50, 50, 0.31);
+  background: var(--purple);
+  font-family: var(--font-family);
+  font-size: 20px;
+  color: var(--white);
+}
+.event-btn-second {
+  background: white;
+  color: var(--purple);
+  border: 1px solid var(--purple);
+}

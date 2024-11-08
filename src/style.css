@@ -2,6 +2,7 @@
 @import url("./CSS/main/hero.css");
 @import url("./CSS/main/about.css");
 @import url("./CSS/main/info.css");
+@import url("./CSS/main/event.css");
 
 :root {
   --black: #121906;
