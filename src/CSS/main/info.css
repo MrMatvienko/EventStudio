@@ -4,9 +4,9 @@
   align-items: center;
   height: 1220px;
   background: url(/image/main/info/info-back-mob.png);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: top center;
-  background-size: cover;
+  background-size: contain;
 }
 .info-wraper {
   display: flex;
@@ -83,9 +83,9 @@
     margin-top: 40px;
     height: 863px;
     background: url(/image/main/info/info-back.png);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: top center;
-    background-size: cover;
+    background-size: contain;
   }
   .info-wraper {
     max-width: 1150px;
