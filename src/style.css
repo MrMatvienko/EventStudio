@@ -3,6 +3,7 @@
 @import url("./CSS/main/about.css");
 @import url("./CSS/main/info.css");
 @import url("./CSS/main/event.css");
+@import url("./CSS/main/gallery.css");
 
 :root {
   --black: #121906;
@@ -57,4 +58,9 @@ img {
 }
 .list {
   list-style: none;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

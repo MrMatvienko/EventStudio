@@ -1,7 +1,4 @@
 .info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 1220px;
   background: url(/image/main/info/info-back-mob.png);
   background-repeat: repeat;

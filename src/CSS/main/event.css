@@ -1,7 +1,4 @@
 .event {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 120px;
 }
 .event-wraper {

@@ -1,7 +1,4 @@
 .hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 720px;
   background-image: url(/image/main/hero/hero-mob.jpg);
   background-repeat: no-repeat;
