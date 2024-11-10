@@ -1,0 +1,56 @@
+.help {
+  flex-direction: column;
+  justify-content: start;
+  height: 397px;
+  background: url(/image/main/help/help-back-mob.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto;
+}
+.help-title {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: var(--pink);
+  margin-top: 71px;
+  margin-bottom: 48px;
+}
+.help-text {
+  max-width: 361px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--black);
+  margin-bottom: 40px;
+}
+.help-btn {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--white);
+  border-radius: 15px;
+  max-width: 224px;
+  width: 100%;
+  height: 70px;
+  box-shadow: 1px 1px 4px 1px rgba(45, 50, 50, 0.31);
+  background: var(--purple);
+}
+@media screen and (min-width: 1440px) {
+  .help {
+    height: 429px;
+  }
+  .help-title {
+    font-size: 24px;
+    margin-top: 79px;
+    margin-bottom: 56px;
+  }
+  .help-text {
+    max-width: 513px;
+    font-size: 20px;
+    margin-bottom: 48px;
+  }
+}
