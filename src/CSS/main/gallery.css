@@ -61,8 +61,7 @@
   object-fit: cover;
   border-radius: 15px;
 }
-.swiper-pagination {
-}
+
 .swiper-pagination-bullet {
   background-color: #000;
   opacity: 0.5;
