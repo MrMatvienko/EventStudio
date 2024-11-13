@@ -23,6 +23,9 @@
   flex-direction: column;
   justify-content: center;
   gap: 57px;
+  margin-bottom: 72px;
+}
+.candle-gallery-list img {
 }
 .candle-gallery-list li {
   display: flex;
@@ -30,15 +33,49 @@
   align-items: center;
   border: 1px solid var(--pink-2);
   border-radius: 15px;
-  width: 361px;
-  height: 643px;
+  padding-bottom: 24px;
   background: rgba(245, 245, 243, 0.6);
+  overflow: hidden;
 }
 .candle-item-title {
   text-align: center;
   font-family: var(--third-family);
   font-size: 24px;
-  line-height: 120%;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--pink-text);
+  margin: 24px 0;
+}
+.candle-item-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 17px;
+  padding-right: 7px;
+}
+.candle-gallery-btn {
+  border-radius: 15px;
+  width: 224px;
+  height: 56px;
+  box-shadow: 1px 1px 4px 1px rgba(45, 50, 50, 0.31);
+  background: var(--purple);
+  margin-top: 24px;
+  color: var(--white);
+  border: none;
+}
+.candle-galley-price-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+.candle-info-text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--black);
+}
+.candle-item-description {
+  margin-bottom: 16px;
 }
