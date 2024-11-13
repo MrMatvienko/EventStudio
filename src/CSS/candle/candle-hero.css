@@ -50,6 +50,9 @@
   height: 24px !important;
   stroke: var(--black);
 }
+.candle-img {
+  display: none;
+}
 @media screen and (min-width: 1440px) {
   .candle-hero {
     height: 818px;
@@ -60,9 +63,18 @@
     padding-right: 100px;
     padding-bottom: 129px;
   }
+  .candle-wraper-text {
+    width: 560px;
+  }
   .candle-info-title {
     font-size: 36px;
     margin-bottom: 57px;
+  }
+  .sub-title {
+    margin-top: 16px;
+  }
+  .candle-img {
+    display: flex;
   }
   .candle-img-mob {
     display: none;

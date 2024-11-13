@@ -1,0 +1,44 @@
+.candle-gallery {
+}
+.candle-gallery-wraper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 361px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.gallery-title {
+  text-align: center;
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: var(--pink);
+}
+.candle-gallery-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 57px;
+}
+.candle-gallery-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--pink-2);
+  border-radius: 15px;
+  width: 361px;
+  height: 643px;
+  background: rgba(245, 245, 243, 0.6);
+}
+.candle-item-title {
+  text-align: center;
+  font-family: var(--third-family);
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: var(--pink-text);
+}

@@ -9,6 +9,8 @@
 @import url("./CSS/footer.css");
 
 @import url("./CSS/candle/candle-hero.css");
+@import url("./CSS/candle/candle-gallery.css");
+
 @import url("./CSS/giftpage/gift.css");
 
 :root {
@@ -70,6 +72,7 @@ img {
   list-style: none;
 }
 section {
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
