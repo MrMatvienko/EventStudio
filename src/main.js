@@ -1,3 +1,13 @@
+const header = document.querySelector(".header");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 400) {
+    header.style.backgroundColor = "rgba(240, 238, 238, 0.9)";
+  } else {
+    header.style.backgroundColor = "rgba(240, 238, 238, 0.61)";
+  }
+});
+/*------------Burger---BTN------------------*/
 const burger = document.querySelector(".burger-menu");
 const mobMenu = document.querySelector(".mobile-bar");
 const menuLinks = document.querySelectorAll(".mobile-bar-item a");
