@@ -1,45 +1,45 @@
-.candle-gallery {
-}
-.candle-gallery-wraper {
+.candle-gallery-list,
+.candle-gallery-wraper,
+.candle-gallery-list li,
+.candle-item-text,
+.candle-galley-price-box {
   display: flex;
   flex-direction: column;
+}
+.candle-gallery-wraper {
   justify-content: center;
   align-items: center;
-  max-width: 361px;
-  padding-left: 16px;
-  padding-right: 16px;
 }
-.gallery-title {
+.candle-gallery-title {
   text-align: center;
   font-family: var(--second-family);
   font-weight: 500;
   font-size: 18px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.01em;
   color: var(--pink);
+  margin-bottom: 16px;
 }
 .candle-gallery-list {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   gap: 57px;
   margin-bottom: 72px;
 }
 .candle-gallery-list img {
+  width: 100%;
 }
 .candle-gallery-list li {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   border: 1px solid var(--pink-2);
   border-radius: 15px;
+  margin-top: 32px;
   padding-bottom: 24px;
-  background: rgba(245, 245, 243, 0.6);
+  background: rgba(245, 245, 243, 0.8);
   overflow: hidden;
 }
 .candle-item-title {
-  text-align: center;
   font-family: var(--third-family);
+  font-weight: 400;
   font-size: 24px;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -47,15 +47,15 @@
   margin: 24px 0;
 }
 .candle-item-text {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  padding-left: 17px;
-  padding-right: 7px;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 8px;
 }
 .candle-gallery-btn {
   border-radius: 15px;
-  width: 224px;
+  max-width: 224px;
+  width: 100%;
   height: 56px;
   box-shadow: 1px 1px 4px 1px rgba(45, 50, 50, 0.31);
   background: var(--purple);
@@ -64,8 +64,6 @@
   border: none;
 }
 .candle-galley-price-box {
-  display: flex;
-  flex-direction: column;
   gap: 4px;
   margin-bottom: 16px;
 }
@@ -78,4 +76,45 @@
 }
 .candle-item-description {
   margin-bottom: 16px;
+}
+@media screen and (min-width: 1440px) {
+  .candle-gallery-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .candle-gallery-list {
+    width: 1240px;
+    gap: 72px;
+    margin-top: 66px;
+    align-items: center;
+  }
+  .candle-gallery-list li {
+    margin: 0;
+    max-width: 1027px;
+    width: 100%;
+    flex-direction: unset;
+    gap: 48px;
+    padding: 0;
+  }
+  .candle-gallery-list li:nth-child(odd) {
+    flex-direction: row;
+    align-self: flex-start;
+  }
+  .candle-gallery-list li:nth-child(even) {
+    flex-direction: row-reverse;
+    align-self: flex-end;
+  }
+  .candle-gallery-list img {
+    max-width: 502px;
+    width: 100%;
+    height: 414px;
+  }
+  .candle-item-text {
+    max-width: 422px;
+    padding: 0;
+    align-items: flex-start;
+  }
+  .candle-gallery-btn {
+    height: 58px;
+  }
 }

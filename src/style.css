@@ -81,3 +81,17 @@ section {
   display: none;
   transition: all 300ms;
 }
+
+.container {
+  max-width: 361px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1240px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
