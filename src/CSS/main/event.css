@@ -244,6 +244,9 @@
   color: var(--white);
 }
 .event-btn-second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: white;
   color: var(--purple);
   border: 1px solid var(--purple);
