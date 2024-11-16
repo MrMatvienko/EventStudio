@@ -11,8 +11,6 @@
   z-index: 10;
 }
 .header-wraper {
-  padding-left: 21px;
-  padding-right: 21px;
   height: 118px;
   display: flex;
   justify-content: right;

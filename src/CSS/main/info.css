@@ -90,6 +90,7 @@
   }
   .info-wraper {
     max-width: 1150px;
+    width: 100%;
     padding-left: 131px;
     padding-right: 139px;
     padding-bottom: 109px;
@@ -103,6 +104,8 @@
     padding-left: 20px;
   }
   .info-quote {
+    max-width: 597px;
+    width: 100%;
     justify-content: flex-start;
     margin-bottom: 92px;
   }
@@ -115,14 +118,16 @@
     gap: 112px;
   }
   .info-dab {
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     background: url(/image/main/info/info-dab.png);
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
   }
   .info-container-img {
-    width: 456px;
+    max-width: 456px;
+    width: 100%;
     height: 506px;
     margin: 0;
   }
