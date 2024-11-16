@@ -11,6 +11,8 @@
 @import url("./CSS/master/master-hero.css");
 @import url("./CSS/master/master-gallery.css");
 
+@import url("./CSS/individual/individual.css");
+
 @import url("./CSS/giftpage/gift.css");
 
 :root {
@@ -24,6 +26,7 @@
   --grey-80: rgba(117, 118, 122, 0.8);
   --grey-footer: #51505b;
   --grey-background: #cbcfd3;
+  --background-btn: #663247;
 
   --font-family: "Lora", sans-serif;
   --second-family: "Playfair Display", sans-serif;
@@ -86,6 +89,21 @@ section {
   max-width: 361px;
   padding-left: 16px;
   padding-right: 16px;
+}
+.order-btn {
+  font-size: 20px;
+  color: var(--white);
+  border-radius: 15px;
+  border: none;
+  width: 224px;
+  height: 58px;
+  box-shadow: 1px 1px 4px 1px rgba(45, 50, 50, 0.31);
+  background: var(--purple);
+  cursor: pointer;
+  transition: all 400ms;
+}
+.order-btn:hover {
+  background: var(--background-btn);
 }
 
 @media screen and (min-width: 1440px) {
