@@ -18,13 +18,14 @@
 }
 .about-wraper-devise {
   position: absolute;
-  bottom: 125px;
-  right: 13px;
+  bottom: 11%;
+  right: 3%;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 15px;
-  width: 337px;
+  max-width: 337px;
+  width: 100%;
   height: 110px;
   background: var(--pink-background);
 }
@@ -34,7 +35,8 @@
   align-items: center;
   border: 0.5px solid #75767a;
   border-radius: 15px;
-  width: 323px;
+  max-width: 323px;
+  width: 100%;
   height: 96px;
 }
 .devise-text {
@@ -45,6 +47,9 @@
   letter-spacing: 0.02em;
   color: var(--black);
   padding: 12px 2px 12px 23px;
+}
+.about-img {
+  max-width: 302px;
 }
 @media screen and (min-width: 1440px) {
   .about-wraper {

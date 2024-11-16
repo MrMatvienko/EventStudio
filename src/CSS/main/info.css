@@ -1,15 +1,15 @@
 .info {
   height: 1220px;
   background: url(/image/main/info/info-back-mob.png);
-  background-repeat: repeat;
+  background-repeat: repeat-x;
   background-position: top center;
-  background-size: contain;
+  background-size: cover contain;
 }
 .info-wraper {
   display: flex;
   flex-direction: column;
   position: relative;
-  max-width: 362px;
+  max-width: 361px;
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -34,6 +34,8 @@
   color: var(--black);
 }
 .info-quote {
+  max-width: 361px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,7 +52,8 @@
   position: absolute;
   top: -32px;
   left: 0;
-  width: 260px;
+  max-width: 260px;
+  width: 100%;
   height: 125px;
   background: url(/image/main/info/info-dab-mob.png);
   background-repeat: no-repeat;
@@ -64,11 +67,12 @@
 }
 .info-container-img {
   position: relative;
-  width: 322px;
+  max-width: 322px;
+  width: 100%;
   height: 327px;
-  margin-left: 13px;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  padding-left: 13px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .img-position {
   position: absolute;

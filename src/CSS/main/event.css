@@ -3,15 +3,13 @@
 }
 .event-wraper {
   position: relative;
-  max-width: 361px;
-  padding-left: 16px;
-  padding-right: 16px;
 }
 .event-wraper::before {
   content: "";
   top: 10px;
   left: 0;
-  width: 360px;
+  max-width: 360px;
+  width: 100%;
   height: 139px;
   position: absolute;
   background: url(/image/main/event/event-dab-mob.png);
@@ -43,7 +41,8 @@
 .event-list-img {
   position: relative;
   border-radius: 15px;
-  width: 361px;
+  max-width: 361px;
+  width: 100%;
   height: 390px;
   margin-bottom: 16px;
 }
@@ -234,7 +233,8 @@
 }
 .event-btn {
   border-radius: 15px;
-  width: 173px;
+  max-width: 173px;
+  width: 100%;
   height: 70px;
   border: none;
   box-shadow: 1px 1px 4px 1px rgba(45, 50, 50, 0.31);
@@ -254,9 +254,6 @@
 @media screen and (min-width: 1440px) {
   .event-wraper {
     position: relative;
-    max-width: 1240px;
-    padding-left: 100px;
-    padding-right: 100px;
   }
   .event-title {
     font-size: 36px;
