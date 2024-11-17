@@ -55,3 +55,14 @@ arrowBtns.forEach((arrow) => {
     }
   });
 });
+
+/*-------------Arrow--SELECTION---------------*/
+document.querySelectorAll(".selection-icon").forEach((icon) =>
+  icon.addEventListener("click", () => {
+    const sublist = icon
+      .closest(".selection-list-item")
+      ?.querySelector(".selection-sublist");
+    sublist?.classList.toggle("active");
+    icon.classList.toggle("active");
+  })
+);

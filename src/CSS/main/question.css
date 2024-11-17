@@ -88,10 +88,10 @@
 }
 .question-answer {
   margin-top: 16px;
-  max-height: 0; /* Приховуємо відповідь */
-  overflow: hidden; /* Забороняємо прокручування */
-  transition: all 500ms; /* Плавний перехід */
-  opacity: 0; /* Початкова прозорість */
+  max-height: 0;
+  overflow: hidden;
+  transition: all 500ms;
+  opacity: 0;
 }
 .question-answer-text {
   font-size: 16px;
