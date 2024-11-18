@@ -76,9 +76,10 @@
   .gallery {
     margin-top: 245px;
     height: 697px;
-    background: url(/image/main/gallery/gallery-back.png);
-    background-repeat: repeat-x;
-    background-position: bottom;
+    background: url(/image/bacground-grey.png);
+    background-repeat: repeat;
+    background-position: bottom center;
+    background-size: contain;
     margin-bottom: 160px;
   }
   .gallery-wraper {

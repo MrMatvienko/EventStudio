@@ -35,13 +35,25 @@
   margin-bottom: 40px;
 }
 .individual-img-mob {
+  border-radius: 15px;
   width: 100%;
 }
 .individual-img {
   display: none;
 }
 @media screen and (min-width: 1440px) {
+  .individual-hero {
+    background: url(/image/background-event-item.png);
+    background-position: top center;
+    background-repeat: repeat;
+    background-size: contain;
+    background-color: var(--grey-background);
+  }
+  .individual-hero-wraper {
+    padding-bottom: 121px;
+  }
   .individual-title {
+    font-size: 36px;
     margin-top: 80px;
     max-width: 513px;
     margin-bottom: 64px;
@@ -64,6 +76,7 @@
   }
   .individual-img {
     display: flex;
+    border-radius: 15px;
   }
   .individual-img-mob {
     display: none;
