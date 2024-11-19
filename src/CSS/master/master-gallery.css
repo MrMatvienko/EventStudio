@@ -8,6 +8,7 @@
 }
 .master-gallery {
   background-color: var(--grey-background);
+  padding-top: 50px;
 }
 .master-gallery-wraper {
   justify-content: center;
