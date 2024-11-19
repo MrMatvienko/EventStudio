@@ -6,6 +6,9 @@
   display: flex;
   flex-direction: column;
 }
+.master-gallery {
+  background-color: var(--grey-background);
+}
 .master-gallery-wraper {
   justify-content: center;
   align-items: center;

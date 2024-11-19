@@ -4,6 +4,11 @@
   padding-top: 142px;
   padding-bottom: 70px;
   margin: 0 auto;
+  background: url(../../image/individual/background-ind-hero-mob.png);
+  background-position: top center;
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-color: var(--grey-background);
 }
 .master-info {
   display: flex;
