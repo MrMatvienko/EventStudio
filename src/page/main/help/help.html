@@ -8,23 +8,316 @@
   </div>
   <div class="help-test">
     <div class="help-test-wraper">
-      <h class="test-title">Ми допоможемо Вам з вибором!</h>
-      <div class="help-test-form">
-        <form class="help-form">
-          <label for="">
+      <h2 class="test-title">Ми допоможемо Вам з вибором!</h2>
+
+      <form class="help-form">
+        <div class="help-form-wraper">
+          <label class="help-form-data" for="name">
             Ім’я
-            <input type="text" placeholder="Ім’я" />
+            <input id="name" type="text" placeholder="Ім’я" required />
           </label>
-          <label for="">
+          <label class="help-form-data" for="phone">
             Номер телефону
-            <input type="tell" placeholder="Номер телефону" />
+            <input
+              id="phone"
+              type="tel"
+              placeholder="Номер телефону"
+              required
+            />
           </label>
-          <label for="">
+          <label class="help-form-data" for="telegram">
             Нік в телеграм
-            <input type="text" placeholder="@Olgar56" />
+            <input id="telegram" type="text" placeholder="@Olgar56" />
           </label>
-        </form>
-      </div>
+          <fieldset>
+            <legend>Який стиль майстер-класу вам більше до вподоби?</legend>
+            <div class="help-answer-wraper">
+              <input
+                id="style1"
+                type="checkbox"
+                name="masterclass-style"
+                value="style1"
+              />
+              <label class="help-answer-title" for="style1"
+                >Художній (малювання, розпис)</label
+              >
+            </div>
+
+            <div class="help-answer-wraper">
+              <input
+                id="style2"
+                type="checkbox"
+                name="masterclass-style"
+                value="style2"
+              />
+              <label class="help-answer-title" for="style2"
+                >Рукоділля (плетіння, створення свічок)</label
+              >
+            </div>
+
+            <div class="help-answer-wraper">
+              <input
+                id="style3"
+                type="checkbox"
+                name="masterclass-style"
+                value="style3"
+              />
+              <label class="help-answer-title" for="style3"
+                >Кулінарний (розпис печива, випічка)</label
+              >
+            </div>
+
+            <div class="help-answer-wraper">
+              <input
+                id="style4"
+                type="checkbox"
+                name="masterclass-style"
+                value="style4"
+              />
+              <label class="help-answer-title" for="style4"
+                >Флористика (робота з квітами)</label
+              >
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Чи подобається вам створення речей для декору дому?</legend>
+            <div class="help-answer-wraper">
+              <input
+                id="style1"
+                type="checkbox"
+                name="masterclass-style"
+                value="style1"
+              />
+              <label class="help-answer-title" for="style1">Так</label>
+            </div>
+
+            <div class="help-answer-wraper">
+              <input
+                id="style2"
+                type="checkbox"
+                name="masterclass-style"
+                value="style2"
+              />
+              <label class="help-answer-title" for="style2"
+                >Ні, більше подобаються функціональні речі</label
+              >
+            </div>
+
+            <div class="help-answer-wraper">
+              <input
+                id="style3"
+                type="checkbox"
+                name="masterclass-style"
+                value="style3"
+              />
+              <label class="help-answer-title" for="style3"
+                >Ні, хочу щось для себе особисто</label
+              >
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>
+              Чи є у вас якісь навички або досвід у майстер-класах?
+            </legend>
+            <div class="help-answer-wraper">
+              <input
+                id="style1"
+                type="checkbox"
+                name="masterclass-style"
+                value="style1"
+              />
+              <label class="help-answer-title" for="style1"
+                >Так, досить високий рівень</label
+              >
+            </div>
+
+            <div class="help-answer-wraper">
+              <input
+                id="style2"
+                type="checkbox"
+                name="masterclass-style"
+                value="style2"
+              />
+              <label class="help-answer-title" for="style2"
+                >Невеликий досвід</label
+              >
+            </div>
+
+            <div class="help-answer-wraper">
+              <input
+                id="style3"
+                type="checkbox"
+                name="masterclass-style"
+                value="style3"
+              />
+              <label class="help-answer-title" for="style3"
+                >Вперше спробую</label
+              >
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Яка тривалість майстер-класу є для вас комфортною?</legend>
+            <div class="help-answer-wraper">
+              <input
+                id="style1"
+                type="checkbox"
+                name="masterclass-style"
+                value="style1"
+              />
+              <label class="help-answer-title" for="style1">До 1 години</label>
+            </div>
+
+            <div class="help-answer-wraper">
+              <input
+                id="style2"
+                type="checkbox"
+                name="masterclass-style"
+                value="style2"
+              />
+              <label class="help-answer-title" for="style2">1-2 години</label>
+            </div>
+
+            <div class="help-answer-wraper">
+              <input
+                id="style3"
+                type="checkbox"
+                name="masterclass-style"
+                value="style3"
+              />
+              <label class="help-answer-title" for="style3"
+                >2 години та більше</label
+              >
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Ви шукаєте майстер-клас для себе чи для компанії?</legend>
+            <div class="help-answer-wraper">
+              <input
+                id="style1"
+                type="checkbox"
+                name="masterclass-style"
+                value="style1"
+              />
+              <label class="help-answer-title" for="style1">Для себе</label>
+            </div>
+
+            <div class="help-answer-wraper">
+              <input
+                id="style2"
+                type="checkbox"
+                name="masterclass-style"
+                value="style2"
+              />
+              <label class="help-answer-title" for="style2"
+                >Для двох і більше</label
+              >
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Який день тижня вам зручний для майстер-класу?</legend>
+            <div class="help-answer-wraper">
+              <input
+                id="style1"
+                type="checkbox"
+                name="masterclass-style"
+                value="style1"
+              />
+              <label class="help-answer-title" for="style1"
+                >Понеділок–п’ятниця</label
+              >
+            </div>
+
+            <div class="help-answer-wraper">
+              <input
+                id="style2"
+                type="checkbox"
+                name="masterclass-style"
+                value="style2"
+              />
+              <label class="help-answer-title" for="style2"
+                >Суббота-неділя</label
+              >
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Який час доби вам зручний для відвідування?</legend>
+            <div class="help-answer-wraper">
+              <input
+                id="style1"
+                type="checkbox"
+                name="masterclass-style"
+                value="style1"
+              />
+              <label class="help-answer-title" for="style1">Ранок</label>
+            </div>
+
+            <div class="help-answer-wraper">
+              <input
+                id="style2"
+                type="checkbox"
+                name="masterclass-style"
+                value="style2"
+              />
+              <label class="help-answer-title" for="style2">День</label>
+            </div>
+
+            <div class="help-answer-wraper">
+              <input
+                id="style2"
+                type="checkbox"
+                name="masterclass-style"
+                value="style2"
+              />
+              <label class="help-answer-title" for="style2">Вечір</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Яка сума для майстер-класу є вам комфортною?</legend>
+            <div class="help-answer-wraper">
+              <input
+                id="style1"
+                type="checkbox"
+                name="masterclass-style"
+                value="style1"
+              />
+              <label class="help-answer-title" for="style1">500-800 грн</label>
+            </div>
+
+            <div class="help-answer-wraper">
+              <input
+                id="style2"
+                type="checkbox"
+                name="masterclass-style"
+                value="style2"
+              />
+              <label class="help-answer-title" for="style2">500-1000 грн</label>
+            </div>
+
+            <div class="help-answer-wraper">
+              <input
+                id="style2"
+                type="checkbox"
+                name="masterclass-style"
+                value="style2"
+              />
+              <label class="help-answer-title" for="style2">500-1500 грн</label>
+            </div>
+            <div class="help-answer-wraper">
+              <input
+                id="style2"
+                type="checkbox"
+                name="masterclass-style"
+                value="style2"
+              />
+              <label class="help-answer-title" for="style2"
+                >будь-яка вартість, головне отримати задоволення</label
+              >
+            </div>
+          </fieldset>
+        </div>
+        <button class="test-btn" type="submit">Відправити</button>
+      </form>
     </div>
   </div>
 </section>

@@ -64,8 +64,9 @@
 /*------------------------TEST-------------------------*/
 .help-test {
   display: none;
+  justify-content: center;
+  align-items: flex-start;
   position: fixed;
-  overflow: auto;
   top: 0;
   left: 0;
   width: 100%;
@@ -73,17 +74,13 @@
   backdrop-filter: blur(10px);
   background: var(--grey-800);
   z-index: 15;
-  margin: 0 auto;
+  padding: 20px;
+  overflow: auto;
 }
 .help-test-wraper {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   border-radius: 15px;
   max-width: 608px;
   width: 100%;
-  height: 1806px;
   background: white;
   display: flex;
   flex-direction: column;
@@ -99,9 +96,57 @@
   text-align: center;
   margin-bottom: 52px;
 }
-.help-test-form {
+.help-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.help-form-data {
+  max-width: 365px;
+  width: 100%;
+}
+.help-form-data input {
+  border: none;
+  border: 1px solid var(--grey-800);
+  border-radius: 7px;
+  width: 333px;
+  height: 44px;
+  padding: 0px 16px;
+  background: rgba(255, 255, 255, 0.85);
+}
+.help-form-wraper {
   max-width: 544px;
   width: 100%;
-  background: var(--pink-background);
   padding: 24px 32px;
+  border-radius: 15px;
+  background: var(--pink-background);
+}
+.help-answer-wraper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.help-answer-wraper input[type="checkbox"] {
+  cursor: pointer;
+  border: 1px solid var(--grey-800);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.85);
+}
+.help-answer-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--pink);
+  cursor: pointer;
+}
+.test-btn {
+  border-radius: 15px;
+  width: 224px;
+  height: 70px;
+  box-shadow: 1px 1px 4px 1px rgba(45, 50, 50, 0.31);
+  background: var(--purple);
+  border: none;
+  color: var(--white);
+  margin-top: 32px;
 }
