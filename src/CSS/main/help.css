@@ -1,8 +1,4 @@
 .help {
-  /* background: url(/image/main/help/help-back-mob.png);
-  background-repeat: repeat-x;
-  background-position: top center;
-  background-size: contain; */
   position: relative;
   background-color: var(--grey-background);
 }
@@ -44,6 +40,11 @@
   height: 70px;
   box-shadow: 1px 1px 4px 1px rgba(45, 50, 50, 0.31);
   background: var(--purple);
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+.help-btn:hover {
+  background: var(--pink-back-btn);
 }
 @media screen and (min-width: 1440px) {
   .help-wraper {
@@ -62,8 +63,10 @@
   }
 }
 /*------------------------TEST-------------------------*/
+
 .help-test {
-  display: none;
+  margin: 0 auto;
+  display: flex;
   justify-content: center;
   align-items: flex-start;
   position: fixed;
@@ -74,27 +77,60 @@
   backdrop-filter: blur(10px);
   background: var(--grey-800);
   z-index: 15;
-  padding: 20px;
-  overflow: auto;
+  padding-top: 40px;
 }
 .help-test-wraper {
+  position: relative;
   border-radius: 15px;
-  max-width: 608px;
+  max-width: 361px;
   width: 100%;
+  max-height: 500px;
   background: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 24px;
+  margin-left: 16px;
+  margin-right: 16px;
+  overflow-y: auto;
+}
+.help-test-wraper::-webkit-scrollbar {
+  width: 3px;
+}
+.help-test-wraper::-webkit-scrollbar-track {
+  background: var(--grey-background);
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.help-test-wraper::-webkit-scrollbar-thumb {
+  background: var(--background-btn);
+  border-radius: 10px;
+  border: 1px solid #f1f1f1;
+  cursor: grab;
+}
+.test-close-btn {
+  border-radius: 50%;
+  top: 16px;
+  right: 10px;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  stroke: black;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.test-close-btn:hover {
+  background: rgb(173, 171, 171, 0.2);
 }
 .test-title {
   font-family: var(--second-family);
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.5;
   letter-spacing: 0.01em;
   text-align: center;
-  margin-bottom: 52px;
+  margin-bottom: 22px;
 }
 .help-form {
   display: flex;
@@ -102,23 +138,31 @@
   flex-direction: column;
   align-items: center;
 }
+.help-form legend {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+}
 .help-form-data {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
   max-width: 365px;
   width: 100%;
+  margin-bottom: 10px;
 }
 .help-form-data input {
-  border: none;
   border: 1px solid var(--grey-800);
   border-radius: 7px;
-  width: 333px;
-  height: 44px;
+  max-width: 300px;
+  height: 40px;
   padding: 0px 16px;
   background: rgba(255, 255, 255, 0.85);
 }
 .help-form-wraper {
-  max-width: 544px;
+  max-width: 329px;
   width: 100%;
-  padding: 24px 32px;
+  padding: 24px 16px;
   border-radius: 15px;
   background: var(--pink-background);
 }
@@ -135,18 +179,64 @@
 }
 .help-answer-title {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.5;
   color: var(--pink);
   cursor: pointer;
 }
 .test-btn {
   border-radius: 15px;
-  width: 224px;
-  height: 70px;
+  width: 200px;
+  height: 56px;
   box-shadow: 1px 1px 4px 1px rgba(45, 50, 50, 0.31);
   background: var(--purple);
   border: none;
   color: var(--white);
   margin-top: 32px;
+}
+
+@media screen and (min-width: 1440px) {
+  .help-test-wraper {
+    max-width: 608px;
+    max-height: 600px;
+  }
+  .help-test-wraper::-webkit-scrollbar {
+    width: 5px;
+  }
+  .test-close-btn {
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+  }
+  .test-title {
+    font-family: var(--second-family);
+    font-size: 24px;
+    margin-bottom: 52px;
+  }
+  .help-form legend {
+    font-size: 20px;
+  }
+  .help-form-data {
+    font-size: 20px;
+    max-width: 365px;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .help-form-data input {
+    width: 333px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.85);
+  }
+  .help-form-wraper {
+    max-width: 544px;
+    padding: 24px 32px;
+  }
+  .help-answer-title {
+    font-size: 18px;
+  }
+  .test-btn {
+    width: 224px;
+    height: 70px;
+  }
 }

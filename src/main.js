@@ -66,3 +66,15 @@ document.querySelectorAll(".selection-icon").forEach((icon) =>
     icon.classList.toggle("active");
   })
 );
+
+/*------------------TEST-TOGGLE-BUTTON------------------- */
+
+const openTest = document.querySelector(".help-btn");
+const testModal = document.querySelector(".help-test");
+const closeTest = document.querySelector(".test-close-btn");
+openTest.addEventListener("click", function () {
+  testModal.classList.remove("is-hidden");
+});
+closeTest.addEventListener("click", function () {
+  testModal.classList.add("is-hidden");
+});
