@@ -175,7 +175,6 @@
 .help-answer-wraper input[type="checkbox"] {
   cursor: pointer;
   border: 1px solid var(--grey-800);
-  border-radius: 50%;
   background: rgba(255, 255, 255, 0.85);
 }
 .help-answer-title {
