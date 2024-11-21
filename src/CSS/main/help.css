@@ -84,7 +84,7 @@
   border-radius: 15px;
   max-width: 361px;
   width: 100%;
-  max-height: 700px;
+  height: calc(100% - 104px);
   background: white;
   display: flex;
   flex-direction: column;
@@ -93,6 +93,7 @@
   margin-left: 16px;
   margin-right: 16px;
   overflow-y: auto;
+  scroll-behavior: smooth;
 }
 .help-test-wraper::-webkit-scrollbar {
   width: 3px;
