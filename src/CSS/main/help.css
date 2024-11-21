@@ -77,7 +77,7 @@
   backdrop-filter: blur(10px);
   background: var(--grey-800);
   z-index: 15;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 .help-test-wraper {
   position: relative;
