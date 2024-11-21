@@ -74,7 +74,9 @@ const testModal = document.querySelector(".help-test");
 const closeTest = document.querySelector(".test-close-btn");
 openTest.addEventListener("click", function () {
   testModal.classList.remove("is-hidden");
+  document.body.style.overflow = "hidden";
 });
 closeTest.addEventListener("click", function () {
   testModal.classList.add("is-hidden");
+  document.body.style.overflow = "";
 });
