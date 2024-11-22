@@ -31,13 +31,13 @@ function createModal({ title, duration, price, description, skills }) {
   <svg> 
   <use href=${sprite + "#icon-clock"}></use> 
   </svg> 
-  <p>Тривадість: ${duration}год </p>
+  <p>Тривалість: ${duration}год </p>
   </div>
   <div class="details-info">
   <svg> 
   <use href=${sprite + "#icon-hand"} ></use> 
   </svg> 
-  <p>Тривадість: ${price}грн </p>
+  <p>Вартість: ${price}грн </p>
   </div>
   </div>
   <div class="details-description"></div>
@@ -75,4 +75,12 @@ function createModal({ title, duration, price, description, skills }) {
   skillsContainer.innerHTML = skillsHTML;
 
   datailsModal.classList.add("open-modal");
+
+  const closeBtn = document.querySelector(".icon-close");
+  closeBtn.addEventListener("click", closeModal);
+}
+
+function closeModal() {
+  document.body.style.overflow = "";
+  datailsModal.classList.remove("open-modal");
 }

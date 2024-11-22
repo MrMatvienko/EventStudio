@@ -10,14 +10,13 @@
   backdrop-filter: blur(10px);
   background: var(--grey-800);
   z-index: 15;
-  padding-top: 20px;
 }
 .modal-wrpaer {
   position: relative;
   border-radius: 15px;
   max-width: 361px;
   width: 100%;
-  height: calc(100% - 104px);
+  max-height: calc(100% - 104px);
   background: url(/image/modal/detail-modal-back-mob.png);
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -32,14 +31,34 @@
   overflow-y: auto;
   scroll-behavior: smooth;
 }
+.modal-wrpaer::-webkit-scrollbar {
+  width: 3px;
+}
+.modal-wrpaer::-webkit-scrollbar-track {
+  background: var(--grey-background);
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.modal-wrpaer::-webkit-scrollbar-thumb {
+  background: var(--background-btn);
+  border-radius: 10px;
+  border: 1px solid #f1f1f1;
+  cursor: grab;
+}
 .icon-close {
   position: absolute;
   top: 24px;
   right: 24px;
   width: 16px;
   height: 16px;
+  border-radius: 50%;
   stroke-width: 1.5px;
   stroke: var(--black);
+  cursor: pointer;
+}
+.icon-close:hover {
+  background: rgb(173, 171, 171, 0.2);
 }
 .modal-wrpaer h2 {
   font-weight: 400;
@@ -66,7 +85,7 @@
 .details-info p {
   font-weight: 500;
   font-size: 14px;
-  line-height: 150%;
+  line-height: 1.5;
   color: var(--grey-footer);
 }
 .details-description {
@@ -74,6 +93,11 @@
   flex-direction: column;
   gap: 8px;
   margin-bottom: 24px;
+}
+.details-description p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 .details-skills-container {
   width: 100%;
@@ -93,4 +117,39 @@
   width: 48px !important;
   height: 24px;
   stroke: black;
+}
+@media screen and (min-width: 1440px) {
+  .modal-wrpaer {
+    max-width: 1030px;
+    width: 100%;
+    background: url(/image/modal/detail-back.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-color: var(--white);
+    padding: 48px 48px 40px 48px;
+  }
+  .modal-wrpaer h2 {
+    font-weight: 400;
+    font-size: 36px;
+    margin-top: unset;
+    margin-bottom: 32px;
+  }
+  .icon-close {
+    width: 24px;
+    height: 24px;
+  }
+  .details-container {
+    gap: 56px;
+  }
+  .details-description {
+    width: 100%;
+    gap: 16px;
+  }
+  .details-description p {
+    max-width: 560px;
+  }
+  .skills-list {
+    max-width: 556px;
+    margin-bottom: 48px;
+  }
 }
