@@ -141,6 +141,16 @@
     margin-top: unset;
     margin-bottom: 32px;
   }
+  .details-info svg {
+    width: 24px;
+    height: 24px;
+  }
+  .details-info p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--grey-footer);
+  }
   .icon-close {
     width: 24px;
     height: 24px;
@@ -155,8 +165,18 @@
   .details-description p {
     max-width: 560px;
   }
+  .details-skills-container {
+    margin-bottom: 64px;
+  }
   .skills-list {
     max-width: 556px;
-    margin-bottom: 48px;
+    margin-bottom: 16px;
+  }
+  .skills-list p {
+    max-width: 520px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
   }
 }
