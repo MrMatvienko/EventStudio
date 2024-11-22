@@ -1,5 +1,5 @@
 import details from "../../details.json" assert { type: "json" };
-
+import sprite from "../image/sprite.svg";
 const dateilsBtn = document.querySelectorAll(".details-event-modal");
 const datailsModal = document.querySelector(".modal-dateils");
 
@@ -10,7 +10,7 @@ dateilsBtn.forEach((item) => {
 function handleItemClick(event) {
   const itemId = event.currentTarget.getAttribute("data-id");
   const detailsData = details.find((detail) => detail.id === itemId);
-  console.log(detailsData.description);
+
   if (detailsData) {
     createModal(detailsData);
   } else {
@@ -18,30 +18,34 @@ function handleItemClick(event) {
   }
 }
 
-function createModal({ title, duration, price, description }) {
+function createModal({ title, duration, price, description, skills }) {
   document.body.style.overflow = "hidden";
   datailsModal.innerHTML = `
   <div class="modal-wrpaer">
+  <svg class="icon-close"> 
+  <use href=${sprite + "#icon-close"}></use> 
+  </svg> 
   <h2>${title}</h2>
   <div class="details-container">
   <div class="details-info">
   <svg> 
-  <use></use> 
+  <use href=${sprite + "#icon-clock"}></use> 
   </svg> 
-  <p>Тривадість: ${duration} год </p>
+  <p>Тривадість: ${duration}год </p>
   </div>
   <div class="details-info">
   <svg> 
-  <use></use> 
+  <use href=${sprite + "#icon-hand"} ></use> 
   </svg> 
-  <p>Тривадість: ${price} грн </p>
+  <p>Тривадість: ${price}грн </p>
   </div>
   </div>
   <div class="details-description"></div>
   <div class="details-skills-container"> 
-  <h3>Разом з “Квітни”:<h3>
+  <h3>Разом з “Квітни”:</h3>
   <div class="details-skills"></div>
   </div>
+  <button class="order-btn">Записатись</button>
   </div>
   `;
 
@@ -53,6 +57,22 @@ function createModal({ title, duration, price, description }) {
     .map((descText) => `<p>${descText}</p>`)
     .join("");
   descriptionContainer.innerHTML = descriptionHTML;
+
+  const skillsContainer = datailsModal.querySelector(".details-skills");
+  const skillsHTML = Object.values(skills)
+    .filter((skill) => skill.trim())
+    .map(
+      (skill) => `
+  <div class="skills-list">
+  <svg>
+  <use href=${sprite + "#icon-lotus"} ></use>
+  </svg>
+  <p>${skill} </p>
+  </div>`
+    )
+    .join("");
+
+  skillsContainer.innerHTML = skillsHTML;
 
   datailsModal.classList.add("open-modal");
 }
