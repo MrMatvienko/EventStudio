@@ -197,7 +197,6 @@
 @media screen and (min-width: 1440px) {
   .help-test-wraper {
     max-width: 608px;
-    max-height: 600px;
   }
   .help-test-wraper::-webkit-scrollbar {
     width: 5px;
