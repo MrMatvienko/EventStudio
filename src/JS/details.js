@@ -45,7 +45,7 @@ function createModal({ title, duration, price, description, skills }) {
   <h3>Разом з “Квітни”:</h3>
   <div class="details-skills"></div>
   </div>
-  <button class="order-btn">Записатись</button>
+  <button class="order-btn detail-btn">Записатись</button>
   </div>
   `;
 

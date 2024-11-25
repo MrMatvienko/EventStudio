@@ -125,6 +125,11 @@
   font-size: 16px;
   line-height: 1.5;
 }
+.detail-btn {
+  max-width: 224px;
+  width: 100%;
+  min-height: 56px;
+}
 @media screen and (min-width: 1440px) {
   .modal-wrpaer {
     max-width: 1030px;
@@ -178,5 +183,8 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
+  }
+  .detail-btn {
+    min-height: 70px;
   }
 }

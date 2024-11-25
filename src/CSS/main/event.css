@@ -50,9 +50,9 @@
 .img-1 {
   background: linear-gradient(
       180deg,
-      rgba(50, 49, 45, 0.7) 0%,
+      rgba(50, 49, 45, 0.4) 0%,
       rgba(25, 25, 23, 0) 50%,
-      rgba(50, 49, 45, 0.7) 100%
+      rgba(50, 49, 45, 0.4) 100%
     ),
     url("/image/main/event/event-1.png");
   background-repeat: no-repeat;
@@ -62,9 +62,9 @@
 .img-2 {
   background: linear-gradient(
       180deg,
-      rgba(50, 49, 45, 0.7) 0%,
+      rgba(50, 49, 45, 0.4) 0%,
       rgba(25, 25, 23, 0) 50%,
-      rgba(50, 49, 45, 0.7) 100%
+      rgba(50, 49, 45, 0.4) 100%
     ),
     url("/image/main/event/event-2.png");
   background-repeat: no-repeat;
@@ -74,9 +74,9 @@
 .img-3 {
   background: linear-gradient(
       180deg,
-      rgba(50, 49, 45, 0.7) 0%,
+      rgba(50, 49, 45, 0.4) 0%,
       rgba(25, 25, 23, 0) 50%,
-      rgba(50, 49, 45, 0.7) 100%
+      rgba(50, 49, 45, 0.4) 100%
     ),
     url("/image/main/event/event-3.png");
   background-repeat: no-repeat;
@@ -86,9 +86,9 @@
 .img-4 {
   background: linear-gradient(
       180deg,
-      rgba(50, 49, 45, 0.7) 0%,
+      rgba(50, 49, 45, 0.4) 0%,
       rgba(25, 25, 23, 0) 50%,
-      rgba(50, 49, 45, 0.7) 100%
+      rgba(50, 49, 45, 0.4) 100%
     ),
     url("/image/main/event/event-4.png");
   background-repeat: no-repeat;
@@ -98,9 +98,9 @@
 .img-5 {
   background: linear-gradient(
       180deg,
-      rgba(50, 49, 45, 0.7) 0%,
+      rgba(50, 49, 45, 0.4) 0%,
       rgba(25, 25, 23, 0) 50%,
-      rgba(50, 49, 45, 0.7) 100%
+      rgba(50, 49, 45, 0.4) 100%
     ),
     url("/image/main/event/event-5.png");
   background-repeat: no-repeat;
@@ -110,9 +110,9 @@
 .img-6 {
   background: linear-gradient(
       180deg,
-      rgba(50, 49, 45, 0.7) 0%,
+      rgba(50, 49, 45, 0.4) 0%,
       rgba(25, 25, 23, 0) 50%,
-      rgba(50, 49, 45, 0.7) 100%
+      rgba(50, 49, 45, 0.4) 100%
     ),
     url("/image/main/event/event-6.png");
   background-repeat: no-repeat;
@@ -122,9 +122,9 @@
 .img-7 {
   background: linear-gradient(
       180deg,
-      rgba(50, 49, 45, 0.7) 0%,
+      rgba(50, 49, 45, 0.4) 0%,
       rgba(25, 25, 23, 0) 50%,
-      rgba(50, 49, 45, 0.7) 100%
+      rgba(50, 49, 45, 0.4) 100%
     ),
     url("/image/main/event/event-7.png");
   background-repeat: no-repeat;
@@ -134,9 +134,9 @@
 .img-8 {
   background: linear-gradient(
       180deg,
-      rgba(50, 49, 45, 0.7) 0%,
+      rgba(50, 49, 45, 0.4) 0%,
       rgba(25, 25, 23, 0) 50%,
-      rgba(50, 49, 45, 0.7) 100%
+      rgba(50, 49, 45, 0.4) 100%
     ),
     url("/image/main/event/event-8.png");
   background-repeat: no-repeat;
@@ -146,9 +146,9 @@
 .img-9 {
   background: linear-gradient(
       180deg,
-      rgba(50, 49, 45, 0.7) 0%,
+      rgba(50, 49, 45, 0.4) 0%,
       rgba(25, 25, 23, 0) 50%,
-      rgba(50, 49, 45, 0.7) 100%
+      rgba(50, 49, 45, 0.4) 100%
     ),
     url("/image/main/event/event-9.png");
   background-repeat: no-repeat;
@@ -158,9 +158,9 @@
 .img-10 {
   background: linear-gradient(
       180deg,
-      rgba(50, 49, 45, 0.7) 0%,
+      rgba(50, 49, 45, 0.4) 0%,
       rgba(25, 25, 23, 0) 50%,
-      rgba(50, 49, 45, 0.7) 100%
+      rgba(50, 49, 45, 0.4) 100%
     ),
     url("/image/main/event/event-10.png");
   background-repeat: no-repeat;
@@ -170,9 +170,9 @@
 .img-11 {
   background: linear-gradient(
       180deg,
-      rgba(50, 49, 45, 0.7) 0%,
+      rgba(50, 49, 45, 0.4) 0%,
       rgba(25, 25, 23, 0) 50%,
-      rgba(50, 49, 45, 0.7) 100%
+      rgba(50, 49, 45, 0.4) 100%
     ),
     url("/image/main/event/event-11.png");
   background-repeat: no-repeat;
@@ -182,9 +182,9 @@
 .img-12 {
   background: linear-gradient(
       180deg,
-      rgba(50, 49, 45, 0.7) 0%,
+      rgba(50, 49, 45, 0.4) 0%,
       rgba(25, 25, 23, 0) 50%,
-      rgba(50, 49, 45, 0.7) 100%
+      rgba(50, 49, 45, 0.4) 100%
     ),
     url("/image/main/event/event-12.png");
   background-repeat: no-repeat;
@@ -233,29 +233,24 @@
   width: 100%;
 }
 .event-btn {
-  border-radius: 15px;
   max-width: 173px;
   width: 100%;
   height: 70px;
-  border: none;
-  box-shadow: 1px 1px 4px 1px rgba(45, 50, 50, 0.31);
-  background: var(--purple);
-  font-family: var(--font-family);
-  font-size: 20px;
-  color: var(--white);
 }
 .event-btn-second {
   display: flex;
   justify-content: center;
   align-items: center;
   background: var(--white);
+  border-radius: 15px;
   color: var(--purple);
   border: 1px solid var(--purple);
-  transition: all 300ms ease;
+  transition: all 400ms ease;
   cursor: pointer;
+  font-size: 20px;
 }
 .event-btn-second:hover {
-  background: var(--pink-back-btn);
+  background: var(--background-btn);
   color: var(--white);
 }
 @media screen and (min-width: 1440px) {

@@ -114,12 +114,10 @@ fieldset {
   color: var(--white);
   border-radius: 15px;
   border: none;
-  width: 224px;
-  min-height: 56px;
   box-shadow: 1px 1px 4px 1px rgba(45, 50, 50, 0.31);
   background: var(--purple);
   cursor: pointer;
-  transition: all 400ms;
+  transition: all 400ms ease;
 }
 .order-btn:hover {
   background: var(--background-btn);
