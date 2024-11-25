@@ -3,7 +3,6 @@ const individualBtn = document.querySelector(".order-individual-btn");
 const groupForm = document.querySelector(".form-group");
 const individualForm = document.querySelector(".form-individual");
 // const titleCurent = document.querySelector(".");
-// const closeBtn = document.querySelector(".order-form-close");
 export function orderInit() {
   individualBtn.addEventListener("click", function () {
     groupForm.classList.add("is-hidden");
@@ -18,3 +17,18 @@ export function orderInit() {
     individualBtn.classList.add("disabled");
   });
 }
+const openBtn = document.querySelectorAll(".event-btn");
+const modal = document.querySelector(".order");
+const closeBtn = document.querySelector(".order-form-close");
+// const cardId = document.getElementById(".");
+
+openBtn.forEach((item) => {
+  item.addEventListener("click", function () {
+    document.body.style.overflow = "hidden";
+    modal.classList.add("open-modal");
+  });
+});
+closeBtn.addEventListener("click", function () {
+  document.body.style.overflow = "";
+  modal.classList.remove("open-modal");
+});
