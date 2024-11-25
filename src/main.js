@@ -1,3 +1,11 @@
+import { initDetails } from "./JS/details";
+import { initSwiper } from "./JS/swiper";
+
+document.addEventListener("DOMContentLoaded", () => {
+  initSwiper();
+  initDetails();
+});
+
 const header = document.querySelector(".header");
 
 window.addEventListener("scroll", () => {

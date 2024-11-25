@@ -1,26 +1,28 @@
 import details from "../../details.json" assert { type: "json" };
 import sprite from "../image/sprite.svg";
-const dateilsBtn = document.querySelectorAll(".details-event-modal");
-const datailsModal = document.querySelector(".modal-dateils");
 
-dateilsBtn.forEach((item) => {
-  item.addEventListener("click", handleItemClick);
-});
+export function initDetails() {
+  const dateilsBtn = document.querySelectorAll(".details-event-modal");
+  const datailsModal = document.querySelector(".modal-dateils");
 
-function handleItemClick(event) {
-  const itemId = event.currentTarget.getAttribute("data-id");
-  const detailsData = details.find((detail) => detail.id === itemId);
+  dateilsBtn.forEach((item) => {
+    item.addEventListener("click", handleItemClick);
+  });
 
-  if (detailsData) {
-    createModal(detailsData);
-  } else {
-    alert("Not found");
+  function handleItemClick(event) {
+    const itemId = event.currentTarget.getAttribute("data-id");
+    const detailsData = details.find((detail) => detail.id === itemId);
+
+    if (detailsData) {
+      createModal(detailsData);
+    } else {
+      alert("Not found");
+    }
   }
-}
 
-function createModal({ title, duration, price, description, skills }) {
-  document.body.style.overflow = "hidden";
-  datailsModal.innerHTML = `
+  function createModal({ title, duration, price, description, skills }) {
+    document.body.style.overflow = "hidden";
+    datailsModal.innerHTML = `
   <div class="modal-wrpaer">
   <svg class="icon-close"> 
   <use href=${sprite + "#icon-close"}></use> 
@@ -45,42 +47,43 @@ function createModal({ title, duration, price, description, skills }) {
   <h3>Разом з “Квітни”:</h3>
   <div class="details-skills"></div>
   </div>
-  <button class="order-btn detail-btn">Записатись</button>
+  <button type="button" class="order-btn detail-btn">Записатись</button>
   </div>
   `;
 
-  const descriptionContainer = datailsModal.querySelector(
-    ".details-description"
-  );
-  const descriptionHTML = Object.values(description)
-    .filter((descText) => descText.trim())
-    .map((descText) => `<p>${descText}</p>`)
-    .join("");
-  descriptionContainer.innerHTML = descriptionHTML;
+    const descriptionContainer = datailsModal.querySelector(
+      ".details-description"
+    );
+    const descriptionHTML = Object.values(description)
+      .filter((descText) => descText.trim())
+      .map((descText) => `<p>${descText}</p>`)
+      .join("");
+    descriptionContainer.innerHTML = descriptionHTML;
 
-  const skillsContainer = datailsModal.querySelector(".details-skills");
-  const skillsHTML = Object.values(skills)
-    .filter((skill) => skill.trim())
-    .map(
-      (skill) => `
+    const skillsContainer = datailsModal.querySelector(".details-skills");
+    const skillsHTML = Object.values(skills)
+      .filter((skill) => skill.trim())
+      .map(
+        (skill) => `
   <div class="skills-list">
   <svg>
   <use href=${sprite + "#icon-lotus"} ></use>
   </svg>
   <p>${skill} </p>
   </div>`
-    )
-    .join("");
+      )
+      .join("");
 
-  skillsContainer.innerHTML = skillsHTML;
+    skillsContainer.innerHTML = skillsHTML;
 
-  datailsModal.classList.add("open-modal");
+    datailsModal.classList.add("open-modal");
 
-  const closeBtn = document.querySelector(".icon-close");
-  closeBtn.addEventListener("click", closeModal);
-}
+    const closeBtn = document.querySelector(".icon-close");
+    closeBtn.addEventListener("click", closeModal);
+  }
 
-function closeModal() {
-  document.body.style.overflow = "";
-  datailsModal.classList.remove("open-modal");
+  function closeModal() {
+    document.body.style.overflow = "";
+    datailsModal.classList.remove("open-modal");
+  }
 }
