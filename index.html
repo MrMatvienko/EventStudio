@@ -17,10 +17,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
       crossorigin="anonymous"
     />
-    <script type="module" crossorigin src="/EventStudio/assets/index-DbCWx-Cs.js"></script>
-    <link rel="modulepreload" crossorigin href="/EventStudio/assets/main-BLXKgl5b.js">
-    <link rel="stylesheet" crossorigin href="/EventStudio/assets/main-ITp5e5fA.css">
-    <link rel="stylesheet" crossorigin href="/EventStudio/assets/index-CwSRrs7M.css">
+    <script type="module" crossorigin src="/EventStudio/assets/main-C6F5Jmjc.js"></script>
+    <link rel="stylesheet" crossorigin href="/EventStudio/assets/main-CBpRg5kc.css">
   </head>
   <body>
     <header class="header">
@@ -230,7 +228,7 @@
           відобразять вашу індивідуальність!
         </p>
         <div id="event" class="event-wraper-btn">
-          <button class="event-btn">Записатись</button>
+          <button class="event-btn order-btn" data-id="candle">Записатись</button>
           <a href="./candle.html" class="event-btn event-btn-second">Детальніше</a>
       </li>
       <li class="event-list-item">
@@ -256,7 +254,7 @@
           розповість вашу історію! Зробіть кожен день квітковим!
         </p>
         <div class="event-wraper-btn">
-          <button class="event-btn">Записатись</button>
+          <button class="event-btn order-btn" data-id="flowers">Записатись</button>
           <a href="./flowers.html" class="event-btn event-btn-second">Детальніше</a>
         </div>
       </li>
@@ -284,7 +282,7 @@
           глибиною!
         </p>
         <div class="event-wraper-btn">
-          <button class="event-btn">Записатись</button>
+          <button class="event-btn order-btn" data-id="facture-picture">Записатись</button>
           <button class="event-btn event-btn-second details-event-modal" data-id="facture-picture">Детальніше</button>
         </div>
       </li>
@@ -312,7 +310,7 @@
           повсякденному житті.
         </p>
         <div class="event-wraper-btn">
-          <button class="event-btn">Записатись</button>
+          <button class="event-btn order-btn" data-id="shoper">Записатись</button>
           <button class="event-btn event-btn-second details-event-modal" data-id="shoper">Детальніше</button>
         </div>
       </li>
@@ -340,7 +338,7 @@
           простотою і елегантністю!
         </p>
         <div class="event-wraper-btn">
-          <button class="event-btn">Записатись</button>
+          <button class="event-btn order-btn" data-id="macrame">Записатись</button>
           <a href="./macrame.html" class="event-btn event-btn-second">Детальніше</a>
         </div>
       </li>
@@ -367,7 +365,7 @@
           тепло, яке ви відчуєте не лише фізично, а й емоційно.
         </p>
         <div class="event-wraper-btn">
-          <button class="event-btn">Записатись</button>
+          <button class="event-btn order-btn" data-id="honey-candle">Записатись</button>
           <button class="event-btn event-btn-second details-event-modal" data-id="honey-candle">Детальніше</button>
         </div>
       </li>
@@ -395,7 +393,7 @@
           у приємній компанії.
         </p>
         <div class="event-wraper-btn">
-          <button class="event-btn">Записатись</button>
+          <button class="event-btn order-btn" data-id="aroma-bags">Записатись</button>
           <button class="event-btn event-btn-second details-event-modal " data-id="aroma-bags">Детальніше</button>
         </div>
       </li>
@@ -423,7 +421,7 @@
           елементи декору.
         </p>
         <div class="event-wraper-btn">
-          <button class="event-btn">Записатись</button>
+          <button class="event-btn order-btn" data-id="dining-candle">Записатись</button>
           <button class="event-btn event-btn-second details-event-modal" data-id="dining-candle">Детальніше</button>
         </div>
       </li>
@@ -451,7 +449,7 @@
           особистий стиль у розпис печива
         </p>
         <div class="event-wraper-btn">
-          <button class="event-btn">Записатись</button>
+          <button class="event-btn order-btn" data-id="cooky">Записатись</button>
           <button class="event-btn event-btn-second details-event-modal" data-id="cooky">Детальніше</button>
         </div>
       </li>
@@ -479,7 +477,7 @@
           керівництвом...
         </p>
         <div class="event-wraper-btn">
-          <button class="event-btn">Записатись</button>
+          <button class="event-btn order-btn" data-id="plaster-figures">Записатись</button>
           <button class="event-btn event-btn-second details-event-modal" data-id="plaster-figures">Детальніше</button>
         </div>
       </li>
@@ -506,7 +504,7 @@
           витончене рукоділля, яке стане прикрасою будь-якого свята.
         </p>
         <div class="event-wraper-btn">
-          <button class="event-btn">Записатись</button>
+          <button class="event-btn order-btn" data-id="cake">Записатись</button>
           <button class="event-btn event-btn-second details-event-modal" data-id="cake">Детальніше</button>
         </div>
       </li>
@@ -519,7 +517,7 @@
           вашої унікальності та увага до кожної деталі вашої роботи.
         </p>
         <div class="event-wraper-btn">
-          <button class="event-btn">Записатись</button>
+          <button class="event-btn order-btn" data-id="individual">Записатись</button>
           <a href="./individual.html" class="event-btn event-btn-second">Детальніше</a>
         </div>
       </li>
@@ -1075,7 +1073,95 @@
   </a>
 </footer>
 
+
     <div class="modal-dateils"></div>
+
+    <div class="order">
+  <div class="order-container">
+    <svg class="order-form-close icon-close">
+      <use href="/EventStudio/assets/sprite-Bo6Exomw.svg#icon-close"></use>
+    </svg>
+    <h2 class="order-title"></h2>
+    <div class="order-toggle-btn">
+      <p class="order-toggle order-group-btn">Груповий</p>
+      <p class="order-toggle order-individual-btn disabled">Індивідуальний</p>
+    </div>
+
+    <form class="form-wraper">
+      <div class="form-group">
+        <label>
+          Ім’я
+          <input id="name-order" type="text" placeholder="Ім’я" required />
+        </label>
+        <label>
+          Номер телефону
+          <input id="tell-order" type="tel" placeholder="+38 000 000 00 00" />
+        </label>
+        <label>
+          Нік в телеграм
+          <input id="ikname-order" type="text" placeholder="@Olgar56" />
+        </label>
+        <label f>
+          Бажані дата та час
+          <input
+            id="date-order"
+            type="datetime-local"
+            placeholder="01.11.2024, 15:00"
+          />
+        </label>
+        <label>
+          Коментар
+          <textarea
+            id="oment-order"
+            type="textarea"
+            placeholder="Коментар"
+          ></textarea>
+        </label>
+      </div>
+      <div class="form-individual">
+        <label>
+          Ім’я
+          <input id="name-order" type="text" placeholder="Ім’я" required />
+        </label>
+        <label>
+          Номер телефону
+          <input id="tell-order" type="tel" placeholder="+38 000 000 00 00" />
+        </label>
+        <label>
+          Нік в телеграм
+          <input id="ikname-order" type="text" placeholder="@Olgar56" />
+        </label>
+        <label>
+          Бажані дата та час
+          <input
+            id="date-order"
+            type="datetime-local"
+            placeholder="01.11.2024, 15:00"
+          />
+        </label>
+        <label>
+          Кількість людей
+          <input id="people" type="text" placeholder="7" />
+        </label>
+        <label>
+          Подія
+          <input id="event" type="text" placeholder="День народження" />
+        </label>
+        <label>
+          Коментар
+          <textarea
+            id="oment-order"
+            type="textarea"
+            placeholder="Коментар"
+          ></textarea>
+        </label>
+      </div>
+
+      <button class="order-form-btn">Записатись</button>
+    </form>
+  </div>
+</div>
+
 
   </body>
 </html>
