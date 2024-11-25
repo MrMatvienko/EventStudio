@@ -2,7 +2,7 @@ const groupBtn = document.querySelector(".order-group-btn");
 const individualBtn = document.querySelector(".order-individual-btn");
 const groupForm = document.querySelector(".form-group");
 const individualForm = document.querySelector(".form-individual");
-// const titleCurent = document.querySelector(".");
+
 export function orderInit() {
   individualBtn.addEventListener("click", function () {
     groupForm.classList.add("is-hidden");
@@ -20,10 +20,13 @@ export function orderInit() {
 const openBtn = document.querySelectorAll(".event-btn");
 const modal = document.querySelector(".order");
 const closeBtn = document.querySelector(".order-form-close");
-// const cardId = document.getElementById(".");
+const modalTitle = document.querySelector(".order-title");
 
 openBtn.forEach((item) => {
   item.addEventListener("click", function () {
+    const card = item.closest(".event-list-item");
+    const title = card.querySelector(".event-item-title").textContent;
+    modalTitle.textContent = title;
     document.body.style.overflow = "hidden";
     modal.classList.add("open-modal");
   });
