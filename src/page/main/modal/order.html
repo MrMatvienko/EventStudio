@@ -1,1 +1,85 @@
-<div class="order"></div>
+<div class="order">
+  <div class="order-container">
+    <svg class="order-form-close icon-close">
+      <use href="image/sprite.svg#icon-close"></use>
+    </svg>
+    <h2 class="order-title">Title</h2>
+    <div class="order-toggle-btn">
+      <p class="order-toggle order-group-btn">Груповий</p>
+      <p class="order-toggle order-individual-btn disabled">Індивідуальний</p>
+    </div>
+
+    <form class="form-wraper">
+      <div class="form-group">
+        <label>
+          Ім’я
+          <input id="name-order" type="text" placeholder="Ім’я" required />
+        </label>
+        <label>
+          Номер телефону
+          <input id="tell-order" type="tel" placeholder="+38 000 000 00 00" />
+        </label>
+        <label>
+          Нік в телеграм
+          <input id="ikname-order" type="text" placeholder="@Olgar56" />
+        </label>
+        <label f>
+          Бажані дата та час
+          <input
+            id="date-order"
+            type="datetime-local"
+            placeholder="01.11.2024, 15:00"
+          />
+        </label>
+        <label>
+          Коментар
+          <textarea
+            id="oment-order"
+            type="textarea"
+            placeholder="Коментар"
+          ></textarea>
+        </label>
+      </div>
+      <div class="form-individual">
+        <label>
+          Ім’я
+          <input id="name-order" type="text" placeholder="Ім’я" required />
+        </label>
+        <label>
+          Номер телефону
+          <input id="tell-order" type="tel" placeholder="+38 000 000 00 00" />
+        </label>
+        <label>
+          Нік в телеграм
+          <input id="ikname-order" type="text" placeholder="@Olgar56" />
+        </label>
+        <label>
+          Бажані дата та час
+          <input
+            id="date-order"
+            type="datetime-local"
+            placeholder="01.11.2024, 15:00"
+          />
+        </label>
+        <label>
+          Кількість людей
+          <input id="people" type="text" placeholder="7" />
+        </label>
+        <label>
+          Подія
+          <input id="event" type="text" placeholder="День народження" />
+        </label>
+        <label>
+          Коментар
+          <textarea
+            id="oment-order"
+            type="textarea"
+            placeholder="Коментар"
+          ></textarea>
+        </label>
+      </div>
+
+      <button class="order-form-btn">Записатись</button>
+    </form>
+  </div>
+</div>

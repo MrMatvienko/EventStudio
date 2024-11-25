@@ -18,6 +18,7 @@
 @import url("./CSS/giftpage/gift.css");
 
 @import url("./CSS/modal/details.css");
+@import url("./CSS/modal/order.css");
 
 :root {
   --black: #121906;
@@ -98,10 +99,11 @@ fieldset {
 }
 .is-hidden {
   display: none;
-  transition: all 300ms;
+  transition: all 400ms ease;
 }
 .open-modal {
   display: flex;
+  transition: all 400ms ease;
 }
 
 .container {
@@ -121,6 +123,20 @@ fieldset {
 }
 .order-btn:hover {
   background: var(--background-btn);
+}
+.icon-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  stroke-width: 1.5px;
+  stroke: var(--black);
+  cursor: pointer;
+}
+.icon-close:hover {
+  background: rgb(173, 171, 171, 0.2);
 }
 
 @media screen and (min-width: 1440px) {
