@@ -1,8 +1,10 @@
 import { initDetails } from "./JS/details";
 import { initSwiper } from "./JS/swiper";
 import { orderInit } from "./JS/order";
+import { modalInit } from "./JS/modal";
 
 document.addEventListener("DOMContentLoaded", () => {
+  modalInit();
   orderInit();
   initSwiper();
   initDetails();
