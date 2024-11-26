@@ -1,12 +1,13 @@
 .help {
   position: relative;
-  background-color: var(--grey-background);
+  background: #f1f1f1;
 }
 .help-wraper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 71px;
   padding-bottom: 60px;
 }
 .help-title {
