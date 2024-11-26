@@ -1,4 +1,4 @@
-const openBtn = document.querySelectorAll(".event-btn");
+const openBtn = document.querySelectorAll(".order-btn");
 const modal = document.querySelector(".order");
 const closeBtn = document.querySelector(".order-form-close");
 const modalTitle = document.querySelector(".order-title");
