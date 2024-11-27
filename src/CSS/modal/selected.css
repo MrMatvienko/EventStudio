@@ -6,4 +6,16 @@
   height: 46px;
   background: rgba(255, 255, 255, 0.85);
   padding-left: 8px;
+  padding-right: 8px;
+}
+.form-select-option {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--pink);
+}
+@media screen and (min-width: 1440px) {
+  .form-select {
+    max-width: 365px;
+  }
 }

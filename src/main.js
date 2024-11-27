@@ -4,8 +4,10 @@ import { orderInit } from "./JS/order";
 import { modalInit } from "./JS/modal";
 import { modalMasterInit } from "./JS/modal";
 import { giftInit } from "./JS/gift";
+import { individInit } from "./JS/individual";
 
 document.addEventListener("DOMContentLoaded", () => {
+  individInit();
   giftInit();
   modalMasterInit();
   modalInit();
