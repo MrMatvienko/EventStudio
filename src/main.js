@@ -2,8 +2,10 @@ import { initDetails } from "./JS/details";
 import { initSwiper } from "./JS/swiper";
 import { orderInit } from "./JS/order";
 import { modalInit } from "./JS/modal";
+import { modalMasterInit } from "./JS/modal";
 
 document.addEventListener("DOMContentLoaded", () => {
+  modalMasterInit();
   modalInit();
   orderInit();
   initSwiper();
@@ -84,11 +86,13 @@ document.querySelectorAll(".selection-icon").forEach((icon) =>
 const openTest = document.querySelector(".help-btn");
 const testModal = document.querySelector(".help-test");
 const closeTest = document.querySelector(".test-close-btn");
-openTest.addEventListener("click", function () {
-  testModal.classList.remove("is-hidden");
-  document.body.style.overflow = "hidden";
-});
-closeTest.addEventListener("click", function () {
-  testModal.classList.add("is-hidden");
-  document.body.style.overflow = "";
-});
+if (openTest) {
+  openTest.addEventListener("click", function () {
+    testModal.classList.remove("is-hidden");
+    document.body.style.overflow = "hidden";
+  });
+  closeTest.addEventListener("click", function () {
+    testModal.classList.add("is-hidden");
+    document.body.style.overflow = "";
+  });
+}

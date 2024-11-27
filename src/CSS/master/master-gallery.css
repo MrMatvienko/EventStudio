@@ -1,6 +1,6 @@
 .master-gallery-list,
 .master-gallery-wraper,
-.master-gallery-list li,
+.master-list-item,
 .master-item-text,
 .master-galley-price-box {
   display: flex;
@@ -32,7 +32,7 @@
 .master-gallery-list img {
   width: 100%;
 }
-.master-gallery-list li {
+.master-list-item {
   align-items: center;
   border: 1px solid var(--pink-2);
   border-radius: 15px;
@@ -92,7 +92,7 @@
     margin-top: 66px;
     align-items: center;
   }
-  .master-gallery-list li {
+  .master-list-item {
     margin: 0;
     max-width: 1027px;
     width: 100%;
@@ -100,11 +100,11 @@
     gap: 48px;
     padding: 0;
   }
-  .master-gallery-list li:nth-child(odd) {
+  .master-list-item:nth-child(odd) {
     flex-direction: row;
     align-self: flex-start;
   }
-  .master-gallery-list li:nth-child(even) {
+  .master-list-item:nth-child(even) {
     flex-direction: row-reverse;
     align-self: flex-end;
   }
