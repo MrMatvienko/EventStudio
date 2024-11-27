@@ -3,8 +3,10 @@ import { initSwiper } from "./JS/swiper";
 import { orderInit } from "./JS/order";
 import { modalInit } from "./JS/modal";
 import { modalMasterInit } from "./JS/modal";
+import { giftInit } from "./JS/gift";
 
 document.addEventListener("DOMContentLoaded", () => {
+  giftInit();
   modalMasterInit();
   modalInit();
   orderInit();

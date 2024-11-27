@@ -20,6 +20,7 @@
 @import url("./CSS/modal/details.css");
 @import url("./CSS/modal/order.css");
 
+@import url("./CSS/modal/selected.css");
 :root {
   --black: #121906;
   --white: #f5f5f3;

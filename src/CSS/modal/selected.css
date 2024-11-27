@@ -1,0 +1,9 @@
+.form-select {
+  border: 1px solid var(--grey-800);
+  border-radius: 7px;
+  max-width: 329px;
+  width: 100%;
+  height: 46px;
+  background: rgba(255, 255, 255, 0.85);
+  padding-left: 8px;
+}
