@@ -66,6 +66,11 @@
   margin-top: 24px;
   color: var(--white);
   border: none;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+.master-gallery-btn:hover {
+  background: var(--background-btn);
 }
 .master-galley-price-box {
   gap: 4px;
