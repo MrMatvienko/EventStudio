@@ -14,8 +14,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
       crossorigin="anonymous"
     />
-    <script type="module" crossorigin src="/EventStudio/assets/main-Daiw66o1.js"></script>
-    <link rel="stylesheet" crossorigin href="/EventStudio/assets/main-Bwa2lpRL.css">
+    <script type="module" crossorigin src="/EventStudio/assets/main-DT7FBisj.js"></script>
+    <link rel="stylesheet" crossorigin href="/EventStudio/assets/main-Cv6gZalj.css">
   </head>
   <body>
     <header class="header">
@@ -99,7 +99,7 @@
             комфортній для себе атмосфері.
           </p>
         </div>
-        <button class="order-btn ind-btn-mod">Залишити заявку</button>
+        <button class="ind-btn-mod">Залишити заявку</button>
       </div>
       <img
         class="individual-img"
@@ -582,6 +582,86 @@
 </footer>
 
 
-    
+    <div class="order">
+  <div class="order-container">
+    <svg class="order-form-close icon-close">
+      <use href="/EventStudio/assets/sprite-Bo6Exomw.svg#icon-close"></use>
+    </svg>
+    <h2 class="order-title">Індивідуальний майстер-клас</h2>
+
+    <form class="form-wraper">
+      <div class="form-group">
+        <select class="form-select" name="select">
+          <option class="form-select-option" value="" disabled selected>
+            Оберіть майстер-клас
+          </option>
+          <option class="form-select-option" value="">Свічеваріння</option>
+          <option class="form-select-option" value="">Флористика</option>
+          <option class="form-select-option" value="">Фактурна картина</option>
+          <option class="form-select-option" value="">Розпис шопера</option>
+          <option class="form-select-option" value="">Макраме</option>
+          <option class="form-select-option" value="">Медова свічка</option>
+          <option class="form-select-option" value="">Аромамішечок</option>
+          <option class="form-select-option" value="">
+            Розпис столових свічок
+          </option>
+          <option class="form-select-option" value="">Імбирне печиво</option>
+          <option class="form-select-option" value="">Гіпсові фігури</option>
+          <option class="form-select-option" value="">Бенто-тортик</option>
+        </select>
+        <label>
+          Ім’я
+          <input id="name-order" type="text" placeholder="Ім’я" required />
+        </label>
+        <label>
+          Номер телефону
+          <input id="tell-order" type="tel" placeholder="+38 000 000 00 00" />
+        </label>
+        <label>
+          Нік в телеграм
+          <input id="ikname-order" type="text" placeholder="@Olgar56" />
+        </label>
+        <label>
+          Бажані дата та час
+          <input
+            id="date-order"
+            type="datetime-local"
+            placeholder="01.11.2024, 15:00"
+          />
+        </label>
+        <label>
+          Коментар
+          <textarea
+            id="coment-order"
+            type="textarea"
+            placeholder="Коментар"
+          ></textarea>
+        </label>
+        <fieldset>
+          <legend class="individual-checkbox-title">Додаткові послуги:</legend>
+          <label class="individual-checkbox-label">
+            <input type="checkbox" />
+            виїзний майстер-клас (допомога у підборі локації)
+          </label>
+          <label class="individual-checkbox-label">
+            <input type="checkbox" />
+            фуршет
+          </label>
+          <label class="individual-checkbox-label">
+            <input type="checkbox" />
+            тематичний майстер-клас
+          </label>
+          <label class="individual-checkbox-label">
+            <input type="checkbox" />
+            фотозона
+          </label>
+        </fieldset>
+      </div>
+
+      <button class="order-form-btn">Записатись</button>
+    </form>
+  </div>
+</div>
+
   </body>
 </html>
