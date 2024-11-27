@@ -137,6 +137,20 @@
   margin-bottom: 24px;
   border-radius: 0 0 15px 15px;
 }
+.individual-checkbox-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.individual-checkbox-label {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--pink);
+  flex-direction: unset;
+  align-items: center;
+  gap: 8px;
+}
 
 @media screen and (min-width: 1440px) {
   .order-container {
