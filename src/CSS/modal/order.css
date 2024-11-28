@@ -153,6 +153,9 @@
   align-items: center;
   gap: 8px;
 }
+.ind-modal-form {
+  border-radius: 15px;
+}
 
 @media screen and (min-width: 1440px) {
   .order-container {
