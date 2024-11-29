@@ -17,8 +17,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
       crossorigin="anonymous"
     />
-    <script type="module" crossorigin src="/EventStudio/assets/main-BQcN1NrG.js"></script>
-    <link rel="stylesheet" crossorigin href="/EventStudio/assets/main-Cv6gZalj.css">
+    <script type="module" crossorigin src="/EventStudio/assets/main-DXvZses_.js"></script>
+    <link rel="stylesheet" crossorigin href="/EventStudio/assets/main-CnJS683f.css">
   </head>
   <body>
     <header class="header">
@@ -984,6 +984,7 @@
     </p>
     <button type="button" class="help-btn">Пройти тест</button>
   </div>
+
   <div class="help-test is-hidden">
     <div class="help-test-wraper">
       <svg class="test-close-btn">
@@ -991,18 +992,21 @@
       </svg>
       <h2 class="test-title">Ми допоможемо Вам з вибором!</h2>
 
-      <form class="help-form">
+      <form class="help-form" method="POST" autocomplete="off" id="help-form">
         <div class="help-form-wraper">
           <label class="help-form-data" for="name">
             Ім’я
-            <input id="name" type="text" placeholder="Ім’я" required />
+            <input id="form_name" type="text" placeholder="Ім’я" required />
           </label>
           <label class="help-form-data" for="phone">
             Номер телефону
             <input
               id="phone"
               type="tel"
-              placeholder="Номер телефону"
+              placeholder="+38 000 000 00 00"
+              pattern="^\+?[0-9\s]{1,13}$"
+              maxlength="13"
+              title="Введіть тільки цифри, максимум 13 символів, починаючи з '+' (опціонально)."
               required
             />
           </label>
@@ -1019,7 +1023,7 @@
                 name="masterclass-style"
                 value="style1"
               />
-              <label class="help-answer-title" for="style1"
+              <label class="help-answer-title" for="style1 "
                 >Художній (малювання, розпис)</label
               >
             </div>
@@ -1449,5 +1453,15 @@
 </div>
 
 
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("esdUna1kvVIZHJdVN");
+      })();
+    </script>
   </body>
 </html>
