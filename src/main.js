@@ -5,8 +5,10 @@ import { modalInit } from "./JS/modal";
 import { modalMasterInit } from "./JS/modal";
 import { giftInit } from "./JS/gift";
 import { individInit } from "./JS/individual";
+import { sendTest } from "./JS/sendFormTest";
 
 document.addEventListener("DOMContentLoaded", () => {
+  sendTest();
   individInit();
   giftInit();
   modalMasterInit();
