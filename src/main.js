@@ -102,3 +102,14 @@ if (openTest) {
     document.body.style.overflow = "";
   });
 }
+
+/*-----------------close-modal-succes--------------------- */
+const succesModal = document.querySelector(".succes");
+const modalWraper = succesModal.querySelector(".succes-modal");
+const closeModdal = modalWraper.querySelector(".icon-close");
+
+if (succesModal) {
+  closeModdal.addEventListener("click", function () {
+    succesModal.classList.remove("open-modal");
+  });
+}

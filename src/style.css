@@ -19,6 +19,8 @@
 
 @import url("./CSS/modal/details.css");
 @import url("./CSS/modal/order.css");
+@import url("./CSS/modal/succes.css");
+@import url("./CSS/loader/loader.css");
 
 @import url("./CSS/modal/selected.css");
 :root {

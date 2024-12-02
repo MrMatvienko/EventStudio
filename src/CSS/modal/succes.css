@@ -1,0 +1,55 @@
+.succes {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  background: var(--grey-800);
+  z-index: 15;
+}
+.succes-modal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  max-width: 311px;
+  width: 100%;
+  padding: 64px 25px 56px 25px;
+  box-shadow: 3px 4px 10px 4px rgba(118, 96, 105, 0.29);
+  background: var(--white);
+}
+.succes-title {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: var(--pink-text);
+  text-align: center;
+  margin-bottom: 12px;
+}
+.succes-text {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--grey-footer);
+  margin-bottom: 8px;
+}
+.succes-instagram-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--grey-footer);
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+.succes-instagram-icon :hover {
+  fill: var(--pink-back-btn);
+}

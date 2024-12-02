@@ -134,6 +134,7 @@
   margin-bottom: 22px;
 }
 .help-form {
+  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -193,6 +194,11 @@
   border: none;
   color: var(--white);
   margin-top: 32px;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+.test-btn:hover {
+  background: var(--pink-back-btn);
 }
 
 @media screen and (min-width: 1440px) {
