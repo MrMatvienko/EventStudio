@@ -148,4 +148,8 @@ fieldset {
     padding-left: 100px;
     padding-right: 100px;
   }
+  .icon-close {
+    width: 24px;
+    height: 24px;
+  }
 }

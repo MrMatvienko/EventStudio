@@ -28,20 +28,24 @@
   font-family: var(--second-family);
   font-weight: 500;
   font-size: 18px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.01em;
   color: var(--pink-text);
   text-align: center;
   margin-bottom: 12px;
 }
 .succes-text {
-  font-family: var(--font-family);
   font-weight: 600;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   text-align: center;
   color: var(--grey-footer);
   margin-bottom: 8px;
+}
+.succes-modal a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .succes-instagram-icon {
   width: 24px;
@@ -52,4 +56,20 @@
 }
 .succes-instagram-icon :hover {
   fill: var(--pink-back-btn);
+}
+@media screen and (min-width: 1440px) {
+  .succes-modal {
+    max-width: 414px;
+    padding: 58px 98px 48px 98px;
+  }
+  .succes-title {
+    font-size: 24px;
+  }
+  .succes-text {
+    font-size: 18px;
+  }
+  .succes-instagram-icon {
+    width: 36px;
+    height: 36px;
+  }
 }
