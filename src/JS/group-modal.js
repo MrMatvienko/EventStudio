@@ -8,13 +8,13 @@ export function groupModal() {
   if (modal) {
     groupform.addEventListener("submit", function (event) {
       event.preventDefault();
-
       const params = {
-        group_name: document.getElementById("group-name-order").value,
-        group_number: document.getElementById("group-tell-order").value,
-        group_telegram: document.getElementById("group-nikname-order").value,
-        group_data: document.getElementById("date-order").value,
-        group_coment: document.getElementById("coment-order").value,
+        group_name: document.getElementById("group-name-order").value || "",
+        group_number: document.getElementById("group-tell-order").value || "",
+        group_telegram:
+          document.getElementById("group-nikname-order").value || "",
+        group_data: document.getElementById("date-order").value || "",
+        group_coment: document.getElementById("coment-order").value || "",
       };
 
       sendBtn.disabled = true;
@@ -23,7 +23,7 @@ export function groupModal() {
         .send("service_zo5qi0m", "template_1f35ezk", params)
         .then(function (res) {
           if (res.status === 200) {
-            modal.classList.add("is-hidden");
+            modal.classList.remove("open-modal");
             succesModal.classList.add("open-modal");
             groupform.reset();
           }

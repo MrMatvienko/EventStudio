@@ -87,6 +87,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+}
+.form-subwraper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 16px;
   width: 100%;
   padding-top: 16px;
@@ -95,7 +102,8 @@
   margin-bottom: 24px;
   border-radius: 0 0 15px 15px;
 }
-.form-wraper label {
+.form-wraper label,
+.order-form-individual label {
   max-width: 329px;
   width: 100%;
   font-weight: 500;
@@ -103,7 +111,9 @@
   line-height: 1.5;
 }
 .form-wraper input,
-.form-wraper textarea {
+.form-wraper textarea,
+.order-form-individual input,
+.order-form-individual textarea {
   border: 1px solid var(--grey-800);
   border-radius: 7px;
   height: 46px;
@@ -111,7 +121,8 @@
   padding-left: 8px;
   padding-right: 8px;
 }
-.form-wraper textarea {
+.form-wraper textarea,
+.order-form-individual textarea {
   height: 83px;
 }
 .order-form-btn {
@@ -128,6 +139,13 @@
 /*---------form--individual------------*/
 .form-individual {
   display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.order-form-individual {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
