@@ -8,11 +8,15 @@ export function groupModal() {
   if (modal) {
     groupform.addEventListener("submit", function (event) {
       event.preventDefault();
+
+      const title = modal.querySelector(".order-title").textContent.trim();
+
       const params = {
         group_name: document.getElementById("group-name-order").value || "",
         group_number: document.getElementById("group-tell-order").value || "",
         group_telegram:
           document.getElementById("group-nikname-order").value || "",
+        master_class: title,
         group_data: document.getElementById("date-order").value || "",
         group_coment: document.getElementById("coment-order").value || "",
       };

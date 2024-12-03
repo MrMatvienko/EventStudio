@@ -6,7 +6,7 @@ import { modalMasterInit } from "./JS/modal";
 import { giftInit } from "./JS/gift";
 import { individInit } from "./JS/individual";
 import { sendTest } from "./JS/sendFormTest";
-import { groupModal } from "./JS/group-modal";
+import { groupModal } from "./JS/sendFormGroup";
 
 document.addEventListener("DOMContentLoaded", () => {
   groupModal();
