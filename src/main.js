@@ -6,8 +6,10 @@ import { modalMasterInit } from "./JS/modal";
 import { giftInit } from "./JS/gift";
 import { individInit } from "./JS/individual";
 import { sendTest } from "./JS/sendFormTest";
+import { groupModal } from "./JS/group-modal";
 
 document.addEventListener("DOMContentLoaded", () => {
+  groupModal();
   sendTest();
   individInit();
   giftInit();
@@ -107,7 +109,6 @@ if (openTest) {
 const succesModal = document.querySelector(".succes");
 const modalWraper = succesModal.querySelector(".succes-modal");
 const closeModdal = modalWraper.querySelector(".icon-close");
-
 if (succesModal) {
   closeModdal.addEventListener("click", function () {
     succesModal.classList.remove("open-modal");

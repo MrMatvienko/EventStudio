@@ -13,15 +13,30 @@
       <div class="form-group">
         <label>
           Ім’я
-          <input id="name-order" type="text" placeholder="Ім’я" required />
+          <input
+            id="group-name-order"
+            type="text"
+            placeholder="Ім’я"
+            required
+          />
         </label>
         <label>
           Номер телефону
-          <input id="tell-order" type="tel" placeholder="+38 000 000 00 00" />
+          <input
+            id="group-tell-order"
+            type="tel"
+            placeholder="+38 000 000 00 00"
+            required
+          />
         </label>
         <label>
           Нік в телеграм
-          <input id="ikname-order" type="text" placeholder="@Olgar56" />
+          <input
+            id="group-nikname-order"
+            type="text"
+            placeholder="@Olgar56"
+            required
+          />
         </label>
         <label>
           Бажані дата та час
@@ -40,6 +55,10 @@
           ></textarea>
         </label>
       </div>
+      <button class="order-form-btn">Записатись</button>
+      <span class="loader"></span>
+    </form>
+    <form class="form-wraper-individual">
       <div class="form-individual">
         <label>
           Ім’я
@@ -51,7 +70,7 @@
         </label>
         <label>
           Нік в телеграм
-          <input id="ikname-order" type="text" placeholder="@Olgar56" />
+          <input id="nikname-order" type="text" placeholder="@Olgar56" />
         </label>
         <label>
           Бажані дата та час
@@ -72,7 +91,7 @@
         <label>
           Коментар
           <textarea
-            id="oment-order"
+            id="ind-coment-order"
             type="textarea"
             placeholder="Коментар"
           ></textarea>
@@ -98,8 +117,6 @@
           </label>
         </fieldset>
       </div>
-
-      <button class="order-form-btn">Записатись</button>
     </form>
   </div>
 </div>
