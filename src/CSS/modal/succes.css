@@ -22,7 +22,10 @@
   width: 100%;
   padding: 64px 25px 56px 25px;
   box-shadow: 3px 4px 10px 4px rgba(118, 96, 105, 0.29);
-  background: var(--white);
+  background: url(/image/modal/succes-back.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .succes-title {
   font-family: var(--second-family);
