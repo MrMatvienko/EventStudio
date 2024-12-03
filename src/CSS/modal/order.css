@@ -125,7 +125,8 @@
 .order-form-individual textarea {
   height: 83px;
 }
-.order-form-btn {
+.order-form-btn,
+.order-form-ind-btn {
   font-weight: 400;
   font-size: 20px;
   color: var(--white);
@@ -182,8 +183,8 @@
     max-height: 777px;
     padding: 24px;
   }
-  .form-group,
-  .form-individual {
+  .form-subwraper,
+  .order-form-individual {
     align-items: flex-start;
     max-width: 544px;
     padding: 24px 32px 32px 32px;
