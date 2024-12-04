@@ -102,8 +102,7 @@
   margin-bottom: 24px;
   border-radius: 0 0 15px 15px;
 }
-.form-wraper label,
-.order-form-individual label {
+.form-wraper label {
   max-width: 329px;
   width: 100%;
   font-weight: 500;
@@ -111,9 +110,7 @@
   line-height: 1.5;
 }
 .form-wraper input,
-.form-wraper textarea,
-.order-form-individual input,
-.order-form-individual textarea {
+.form-wraper textarea {
   border: 1px solid var(--grey-800);
   border-radius: 7px;
   height: 46px;
@@ -121,12 +118,10 @@
   padding-left: 8px;
   padding-right: 8px;
 }
-.form-wraper textarea,
-.order-form-individual textarea {
+.form-wraper textarea {
   height: 83px;
 }
-.order-form-btn,
-.order-form-ind-btn {
+.order-form-btn {
   font-weight: 400;
   font-size: 20px;
   color: var(--white);
@@ -138,26 +133,13 @@
   background: var(--purple);
 }
 /*---------form--individual------------*/
-.form-individual {
+.individual-part-one,
+.individual-part-two {
   display: none;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
 }
-.order-form-individual {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  width: 100%;
-  padding-top: 16px;
-  padding-bottom: 24px;
-  background: var(--pink-background);
-  margin-bottom: 24px;
-  border-radius: 0 0 15px 15px;
-}
+
 .individual-checkbox-title {
   font-weight: 500;
   font-size: 18px;

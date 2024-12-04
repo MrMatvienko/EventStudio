@@ -14,17 +14,12 @@
         <div class="form-subwraper">
           <label>
             Ім’я
-            <input
-              id="group-name-order"
-              type="text"
-              placeholder="Ім’я"
-              required
-            />
+            <input data-input="name" type="text" placeholder="Ім’я" required />
           </label>
           <label>
             Номер телефону
             <input
-              id="group-tell-order"
+              data-input="tell"
               type="tel"
               placeholder="+38 000 000 00 00"
               required
@@ -32,78 +27,37 @@
           </label>
           <label>
             Нік в телеграм
-            <input
-              id="group-nikname-order"
-              type="text"
-              placeholder="@Olgar56"
-            />
+            <input data-input="telegram" type="text" placeholder="@Olgar56" />
           </label>
           <label>
             Бажані дата та час
             <input
-              id="date-order"
+              data-input="date"
               type="datetime-local"
               placeholder="01.11.2024, 15:00"
             />
           </label>
+          <div class="individual-part-one">
+            <label>
+          Кількість людей
+          <input data-input="people" type="text" placeholder="7" />
+        </label>
+        <label>
+          Подія
+          <input data-input="event" type="text" placeholder="День народження" />
+        </label>
+        <label>
+          </div>
           <label>
             Коментар
             <textarea
-              id="coment-order"
+              data-input="comment"
               type="textarea"
               placeholder="Коментар"
             ></textarea>
           </label>
-        </div>
-        <button class="order-form-btn">Записатись</button>
-        <span class="loader"></span>
-      </div>
-    </form>
-    <form class="form-individual">
-      <div class="order-form-individual">
-        <label>
-          Ім’я
-          <input id="name-order" type="text" placeholder="Ім’я" required />
-        </label>
-        <label>
-          Номер телефону
-          <input
-            id="tell-order"
-            type="tel"
-            placeholder="+38 000 000 00 00"
-            required
-          />
-        </label>
-        <label>
-          Нік в телеграм
-          <input id="nikname-order" type="text" placeholder="@Olgar56" />
-        </label>
-        <label>
-          Бажані дата та час
-          <input
-            id="date-order"
-            type="datetime-local"
-            placeholder="01.11.2024, 15:00"
-          />
-        </label>
-        <label>
-          Кількість людей
-          <input id="people" type="text" placeholder="7" />
-        </label>
-        <label>
-          Подія
-          <input id="event" type="text" placeholder="День народження" />
-        </label>
-        <label>
-          Коментар
-          <textarea
-            id="ind-coment-order"
-            type="textarea"
-            placeholder="Коментар"
-          ></textarea>
-        </label>
-
-        <fieldset>
+          <div class="individual-part-two">
+             <fieldset>
           <legend class="individual-checkbox-title">Додаткові послуги:</legend>
           <label class="individual-checkbox-label">
             <input type="checkbox" />
@@ -122,9 +76,12 @@
             фотозона
           </label>
         </fieldset>
+          </div>
+        </div>
+        <button class="order-form-btn">Записатись</button>
+        <span class="loader"></span>
       </div>
-      <button class="order-form-ind-btn">Записатись</button>
-      <span class="loader"></span>
     </form>
+    
   </div>
 </div>

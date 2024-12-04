@@ -1,20 +1,20 @@
 export function orderInit() {
   const groupBtn = document.querySelector(".order-group-btn");
   const individualBtn = document.querySelector(".order-individual-btn");
-  const groupForm = document.querySelector(".form-group");
-  const individualForm = document.querySelector(".form-individual");
+  const individualFormOne = document.querySelector(".individual-part-one");
+  const individualFormTwo = document.querySelector(".individual-part-two");
 
   if (individualBtn) {
     individualBtn.addEventListener("click", function () {
-      groupForm.classList.add("is-hidden");
       groupBtn.classList.add("disabled");
-      individualForm.classList.add("open-modal");
+      individualFormOne.classList.add("open-modal");
+      individualFormTwo.classList.add("open-modal");
       individualBtn.classList.remove("disabled");
     });
     groupBtn.addEventListener("click", function () {
-      groupForm.classList.remove("is-hidden");
       groupBtn.classList.remove("disabled");
-      individualForm.classList.remove("open-modal");
+      individualFormOne.classList.remove("open-modal");
+      individualFormTwo.classList.remove("open-modal");
       individualBtn.classList.add("disabled");
     });
   }
