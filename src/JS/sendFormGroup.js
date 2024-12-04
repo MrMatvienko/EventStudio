@@ -12,13 +12,15 @@ export function groupModal() {
       const title = modal.querySelector(".order-title").textContent.trim();
 
       const params = {
-        group_name: document.getElementById("group-name-order").value || "",
-        group_number: document.getElementById("group-tell-order").value || "",
+        group_name: groupform.querySelector('[data-input="name"]').value || "",
+        group_number:
+          groupform.querySelector('[data-input="tell"]').value || "",
         group_telegram:
-          document.getElementById("group-nikname-order").value || "",
+          groupform.querySelector('[data-input="telegram"]').value || "",
         master_class: title,
-        group_data: document.getElementById("date-order").value || "",
-        group_coment: document.getElementById("coment-order").value || "",
+        group_data: groupform.querySelector('[data-input="date"]').value || "",
+        group_coment:
+          groupform.querySelector('[data-input="comment"]').value || "",
       };
 
       sendBtn.disabled = true;

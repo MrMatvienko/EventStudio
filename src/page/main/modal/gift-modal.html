@@ -7,47 +7,55 @@
 
     <form class="form-wraper">
       <div class="form-group">
-        <select class="form-select" name="select">
-          <option value="" disabled selected>Оберіть майстер-клас</option>
-          <option value="">Свічеваріння</option>
-          <option value="">Флористика</option>
-          <option value="">Фактурна картина</option>
-          <option value="">Розпис шопера</option>
-          <option value="">Макраме</option>
-          <option value="">Медова свічка</option>
-          <option value="">Аромамішечок</option>
-          <option value="">Розпис столових свічок</option>
-          <option value="">Імбирне печиво</option>
-          <option value="">Гіпсові фігури</option>
-          <option value="">Бенто-тортик</option>
-        </select>
-        <label>
-          Ім’я
-          <input id="name-order" type="text" placeholder="Ім’я" required />
-        </label>
-        <label>
-          Номер телефону
-          <input id="tell-order" type="tel" placeholder="+38 000 000 00 00" />
-        </label>
-        <label>
-          Нік в телеграм
-          <input id="ikname-order" type="text" placeholder="@Olgar56" />
-        </label>
-        <label>
-          На чиє ім’я сертифікат
-          <input id="gift-name-order" type="text" placeholder="Оленці" />
-        </label>
-        <label>
-          Коментар
-          <textarea
-            id="coment-order"
-            type="textarea"
-            placeholder="Коментар"
-          ></textarea>
-        </label>
-      </div>
+        <div class="form-subwraper">
+          <select class="form-select" name="select">
+            <option value="" disabled selected>Оберіть майстер-клас</option>
+            <option value="">Свічеваріння</option>
+            <option value="">Флористика</option>
+            <option value="">Фактурна картина</option>
+            <option value="">Розпис шопера</option>
+            <option value="">Макраме</option>
+            <option value="">Медова свічка</option>
+            <option value="">Аромамішечок</option>
+            <option value="">Розпис столових свічок</option>
+            <option value="">Імбирне печиво</option>
+            <option value="">Гіпсові фігури</option>
+            <option value="">Бенто-тортик</option>
+          </select>
+          <label>
+            Ім’я
+            <input data-input="name" type="text" placeholder="Ім’я" required />
+          </label>
+          <label>
+            Номер телефону
+            <input
+              data-input="tell"
+              type="tel"
+              placeholder="+38 000 000 00 00"
+              required
+            />
+          </label>
+          <label>
+            Нік в телеграм
+            <input data-input="telegram" type="text" placeholder="@Olgar56" />
+          </label>
+          <label>
+            На чиє ім’я сертифікат
+            <input id="gift-name-order" type="text" placeholder="Оленці" />
+          </label>
 
-      <button class="order-form-btn">Записатись</button>
+          <label>
+            Коментар
+            <textarea
+              data-input="comment"
+              type="textarea"
+              placeholder="Коментар"
+            ></textarea>
+          </label>
+        </div>
+        <button class="order-form-btn">Записатись</button>
+        <span class="loader"></span>
+      </div>
     </form>
   </div>
 </div>

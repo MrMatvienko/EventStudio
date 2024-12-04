@@ -17,7 +17,11 @@
   max-width: 345px;
   width: 100%;
   max-height: calc(100% - 104px);
-  background: var(--white);
+  background: url(/image/modal/back-moda-order-mob.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
+  background-color: var(--white);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,6 +141,7 @@
 .individual-part-two {
   display: none;
   flex-direction: column;
+  align-items: center;
   width: 100%;
 }
 
@@ -161,6 +166,11 @@
 
 @media screen and (min-width: 1440px) {
   .order-container {
+    background: url(/image/modal/back-modal-order.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+    background-color: var(--white);
     max-width: 608px;
     max-height: 777px;
     padding: 24px;
@@ -177,5 +187,9 @@
   .order-title {
     font-size: 36px;
     width: 100%;
+  }
+  .individual-part-one,
+  .individual-part-two {
+    align-items: flex-start;
   }
 }
