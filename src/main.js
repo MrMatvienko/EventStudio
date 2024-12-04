@@ -3,7 +3,6 @@ import { initSwiper } from "./JS/swiper";
 import { orderInit } from "./JS/order";
 import { modalInit } from "./JS/modal";
 import { modalMasterInit } from "./JS/modal";
-import { giftInit } from "./JS/gift";
 import { individInit } from "./JS/individual";
 import { sendTest } from "./JS/sendFormTest";
 import { groupModal } from "./JS/sendFormGroup";
@@ -12,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
   groupModal();
   sendTest();
   individInit();
-  giftInit();
   modalMasterInit();
   modalInit();
   orderInit();

@@ -84,6 +84,15 @@
     <load src="./page/main/modal/gift-modal.html" />
     <load src="./page/main/modal/succes-modal.html" />
 
-    <script type="module" src="./main.js"></script>
+    <script src="./JS/gift.js" type="module"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("esdUna1kvVIZHJdVN");
+      })();
+    </script>
   </body>
 </html>

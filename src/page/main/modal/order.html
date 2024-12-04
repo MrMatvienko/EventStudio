@@ -5,8 +5,8 @@
     </svg>
     <h2 class="order-title"></h2>
     <div class="order-toggle-btn">
-      <p class="order-toggle order-group-btn">Груповий</p>
-      <p class="order-toggle order-individual-btn disabled">Індивідуальний</p>
+      <p class="order-toggle order-group-btn group">Груповий</p>
+      <p class="order-toggle order-individual-btn disabled individual">Індивідуальний</p>
     </div>
 
     <form class="form-wraper">
@@ -40,7 +40,7 @@
           <div class="individual-part-one">
             <label>
           Кількість людей
-          <input data-input="people" type="text" placeholder="7" />
+          <input data-input="quantity" type="text" placeholder="7" />
         </label>
         <label>
           Подія
@@ -60,19 +60,19 @@
              <fieldset>
           <legend class="individual-checkbox-title">Додаткові послуги:</legend>
           <label class="individual-checkbox-label">
-            <input type="checkbox" />
+            <input type="checkbox"  name="services-1"/>
             виїзний майстер-клас (допомога у підборі локації)
           </label>
           <label class="individual-checkbox-label">
-            <input type="checkbox" />
+            <input type="checkbox" name="services-2" />
             фуршет
           </label>
           <label class="individual-checkbox-label">
-            <input type="checkbox" />
+            <input type="checkbox"  name="services-3"/>
             тематичний майстер-клас
           </label>
           <label class="individual-checkbox-label">
-            <input type="checkbox" />
+            <input type="checkbox"  name="services-4"/>
             фотозона
           </label>
         </fieldset>
