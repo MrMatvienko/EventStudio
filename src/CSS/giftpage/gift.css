@@ -79,7 +79,7 @@
     padding-bottom: unset;
   }
   .gift-wraper {
-    padding-top: 178px;
+    padding-top: 144px;
     padding-bottom: 160px;
   }
   .gift-title {
@@ -101,6 +101,7 @@
     display: none;
   }
   .gift-img {
+    border-radius: 15px;
     width: 503px;
     max-height: 517px;
     display: flex;
