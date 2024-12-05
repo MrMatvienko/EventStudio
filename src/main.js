@@ -46,37 +46,44 @@ menuLinks.forEach((link) => {
 });
 
 /*--------------Question--Button--Arrow-------------------*/
-const arrowBtns = document.querySelectorAll(".question-icon");
+const titleBoxes = document.querySelectorAll(".question-wraper-box");
 const answers = document.querySelectorAll(".question-answer");
 
-arrowBtns.forEach((arrow) => {
-  arrow.addEventListener("click", function () {
-    const questionItem = arrow.closest(".question-list-item");
+titleBoxes.forEach((box) => {
+  box.addEventListener("click", function (event) {
+    const questionItem = box.closest(".question-list-item");
     const answer = questionItem.querySelector(".question-answer");
+    const arrow = box.querySelector(".question-icon");
 
-    /*-----Closed all answer---------*/
+    if (event.target.closest(".question-icon")) {
+      toggleAnswer(answer, arrow);
+      return;
+    }
     answers.forEach((item) => {
       if (item !== answer) {
         item.classList.remove("active");
         item.style.maxHeight = null;
-        const arrowIcon = item
+        const otherArrow = item
           .closest(".question-list-item")
           .querySelector(".question-icon");
-        arrowIcon.style.transform = "rotate(0deg)";
+        otherArrow.style.transform = "rotate(0deg)";
       }
     });
-
-    answer.classList.toggle("active");
-
-    if (answer.classList.contains("active")) {
-      answer.style.maxHeight = answer.scrollHeight + "px";
-      arrow.style.transform = "rotate(180deg)";
-    } else {
-      answer.style.maxHeight = null;
-      arrow.style.transform = "rotate(0deg)";
-    }
+    toggleAnswer(answer, arrow);
   });
 });
+
+function toggleAnswer(answer, arrow) {
+  answer.classList.toggle("active");
+
+  if (answer.classList.contains("active")) {
+    answer.style.maxHeight = answer.scrollHeight + "px";
+    arrow.style.transform = "rotate(180deg)";
+  } else {
+    answer.style.maxHeight = null;
+    arrow.style.transform = "rotate(0deg)";
+  }
+}
 
 /*-------------Arrow--SELECTION---------------*/
 document.querySelectorAll(".selection-icon").forEach((icon) =>

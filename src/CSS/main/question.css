@@ -76,6 +76,7 @@
   font-size: 18px;
   line-height: 1.5;
   color: var(--pink);
+  cursor: pointer;
 }
 .question-icon {
   border-radius: 50%;
