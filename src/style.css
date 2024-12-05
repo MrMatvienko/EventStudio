@@ -56,6 +56,22 @@ body {
   background-color: var(--white);
   color: var(--black);
 }
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: var(--grey-background);
+  border-radius: 10px;
+  /* margin-top: 15px;
+  margin-bottom: 15px; */
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--background-btn);
+  border-radius: 10px;
+  border: 1px solid #f1f1f1;
+  cursor: grab;
+}
 a {
   text-decoration: none;
 }

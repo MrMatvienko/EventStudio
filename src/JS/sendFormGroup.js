@@ -1,5 +1,6 @@
 export function groupModal() {
   const modal = document.querySelector(".order");
+  const mainModal = document.querySelector(".main-order");
   const groupform = document.querySelector(".form-wraper");
   const sendBtn = document.querySelector(".order-form-btn");
   const succesModal = document.querySelector(".succes");
