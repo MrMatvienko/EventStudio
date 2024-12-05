@@ -31,15 +31,18 @@ if (modal) {
     event.preventDefault();
 
     const title = modal.querySelector(".order-title").textContent.trim();
+    const selectElement = document.querySelector(".form-select");
+    const selectedValue = selectElement.value;
 
     const params = {
+      event_title: title,
       group_name: groupform.querySelector('[data-input="name"]')?.value || "",
       group_number: groupform.querySelector('[data-input="tell"]')?.value || "",
       group_telegram:
         groupform.querySelector('[data-input="telegram"]')?.value || "",
       from_name:
         groupform.querySelector('[data-input="from_name"]')?.value || "",
-      master_class: title,
+      master_class: selectedValue,
       group_coment:
         groupform.querySelector('[data-input="comment"]')?.value || "",
     };

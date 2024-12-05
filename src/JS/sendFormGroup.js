@@ -14,7 +14,6 @@ export function groupModal() {
           ".individual-part-two"
         );
         if (!servicesContainer) {
-          // Якщо елемент не знайдений, повертаємо порожній масив
           return [];
         }
         const checkboxes = servicesContainer.querySelectorAll(

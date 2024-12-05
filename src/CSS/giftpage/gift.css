@@ -55,7 +55,14 @@
   box-shadow: 1px 1px 4px 1px rgba(45, 50, 50, 0.31);
   background: var(--purple);
   border: none;
+  font-weight: 400;
+  font-size: 20px;
   color: var(--white);
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+.gift-btn:hover {
+  background: var(--pink-back-btn);
 }
 .gift-img-mob {
   border-radius: 15px;
@@ -76,6 +83,7 @@
     padding-bottom: 160px;
   }
   .gift-title {
+    font-size: 36px;
     margin-bottom: 64px;
   }
   .gift-content {
