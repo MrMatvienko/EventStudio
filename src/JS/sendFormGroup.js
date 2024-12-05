@@ -9,6 +9,9 @@ export function groupModal() {
     groupform.addEventListener("submit", function (event) {
       event.preventDefault();
 
+      const selectElement = document.querySelector(".form-select");
+      const selectedValue = selectElement.value;
+
       const getSelectedServices = () => {
         const servicesContainer = document.querySelector(
           ".individual-part-two"
@@ -47,6 +50,7 @@ export function groupModal() {
 
       const params = {
         event_title: eventTitle,
+        master_class: selectedValue,
         group_name: groupform.querySelector('[data-input="name"]')?.value || "",
         group_number:
           groupform.querySelector('[data-input="tell"]')?.value || "",
@@ -54,6 +58,8 @@ export function groupModal() {
           groupform.querySelector('[data-input="telegram"]')?.value || "",
         master_class: title,
         group_data: groupform.querySelector('[data-input="date"]')?.value || "",
+        from_name:
+          groupform.querySelector('[data-input="from_name"]')?.value || "",
         group_coment:
           groupform.querySelector('[data-input="comment"]')?.value || "",
         individual_quantity:

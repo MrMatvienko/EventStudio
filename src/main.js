@@ -6,11 +6,13 @@ import { modalMasterInit } from "./JS/modal";
 import { individInit } from "./JS/individual";
 import { sendTest } from "./JS/sendFormTest";
 import { groupModal } from "./JS/sendFormGroup";
+import { giftInit } from "./JS/gift";
 
 document.addEventListener("DOMContentLoaded", () => {
   groupModal();
   sendTest();
   individInit();
+  giftInit();
   modalMasterInit();
   modalInit();
   orderInit();
