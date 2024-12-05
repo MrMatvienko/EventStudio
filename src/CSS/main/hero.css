@@ -51,9 +51,14 @@
   border: none;
   width: 224px;
   height: 70px;
+  padding: 25px 10px;
   box-shadow: 1px 1px 4px 1px rgba(45, 50, 50, 0.31);
   background: var(--purple);
   cursor: pointer;
+  transition: all 400ms ease;
+}
+.hero-btn:hover {
+  background: var(--background-btn);
 }
 @media screen and (min-width: 1440px) {
   .hero {
