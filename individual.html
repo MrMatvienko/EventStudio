@@ -14,10 +14,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
       crossorigin="anonymous"
     />
-    <script type="module" crossorigin src="/EventStudio/assets/style-CX6ymeZe.js"></script>
-    <script type="module" crossorigin src="/EventStudio/assets/main-BWv6slj7.js"></script>
-    <link rel="stylesheet" crossorigin href="/EventStudio/assets/style-Dy-C1uxq.css">
-    <link rel="stylesheet" crossorigin href="/EventStudio/assets/main-CwSRrs7M.css">
+    <script type="module" crossorigin src="/EventStudio/assets/main-B7foz5Rk.js"></script>
+    <link rel="stylesheet" crossorigin href="/EventStudio/assets/main-CdMbzeE1.css">
   </head>
   <body>
     <header class="header">
@@ -490,76 +488,94 @@
     </svg>
     <h2 class="order-title">Індивідуальний майстер-клас</h2>
 
-    <form class="form-wraper">
-      <div class="form-group ind-modal-form">
-        <select class="form-select" name="select">
-          <option class="form-select-option" value="" disabled selected>
-            Оберіть майстер-клас
-          </option>
-          <option class="form-select-option" value="">Свічеваріння</option>
-          <option class="form-select-option" value="">Флористика</option>
-          <option class="form-select-option" value="">Фактурна картина</option>
-          <option class="form-select-option" value="">Розпис шопера</option>
-          <option class="form-select-option" value="">Макраме</option>
-          <option class="form-select-option" value="">Медова свічка</option>
-          <option class="form-select-option" value="">Аромамішечок</option>
-          <option class="form-select-option" value="">
-            Розпис столових свічок
-          </option>
-          <option class="form-select-option" value="">Імбирне печиво</option>
-          <option class="form-select-option" value="">Гіпсові фігури</option>
-          <option class="form-select-option" value="">Бенто-тортик</option>
-        </select>
-        <label>
-          Ім’я
-          <input id="name-order" type="text" placeholder="Ім’я" required />
+     <form class="form-wraper">
+      <div class="form-group">
+        <div class="form-subwraper">
+           <select class="form-select" name="select">
+            <option value="" disabled selected>Оберіть майстер-клас</option>
+            <option value="Свічеваріння">Свічеваріння</option>
+            <option value="Флористика">Флористика</option>
+            <option value="Фактурна картина">Фактурна картина</option>
+            <option value="Розпис шопера">Розпис шопера</option>
+            <option value="Макраме">Макраме</option>
+            <option value="Медова свічка">Медова свічка</option>
+            <option value="Аромамішечок">Аромамішечок</option>
+            <option value="Розпис столових свічок">
+              Розпис столових свічок
+            </option>
+            <option value="Імбирне печиво">Імбирне печиво</option>
+            <option value="Гіпсові фігури">Гіпсові фігури</option>
+            <option value="Бенто-тортик">Бенто-тортик</option>
+          </select>
+          <label>
+            Ім’я
+            <input data-input="name" type="text" placeholder="Ім’я" required />
+          </label>
+          <label>
+            Номер телефону
+            <input
+              data-input="tell"
+              type="tel"
+              placeholder="+38 000 000 00 00"
+              required
+            />
+          </label>
+          <label>
+            Нік в телеграм
+            <input data-input="telegram" type="text" placeholder="@Olgar56" />
+          </label>
+          <label>
+            Бажані дата та час
+            <input
+              data-input="date"
+              type="datetime-local"
+              placeholder="01.11.2024, 15:00"
+            />
+          </label>
+          <div class="individual-part-one open-modal">
+            <label>
+          Кількість людей
+          <input data-input="quantity" type="text" placeholder="7" />
         </label>
         <label>
-          Номер телефону
-          <input id="tell-order" type="tel" placeholder="+38 000 000 00 00" />
+          Подія
+          <input data-input="event" type="text" placeholder="День народження" />
         </label>
         <label>
-          Нік в телеграм
-          <input id="nikname-order" type="text" placeholder="@Olgar56" />
-        </label>
-        <label>
-          Бажані дата та час
-          <input
-            id="date-order"
-            type="datetime-local"
-            placeholder="01.11.2024, 15:00"
-          />
-        </label>
-        <label>
-          Коментар
-          <textarea
-            id="coment-order"
-            type="textarea"
-            placeholder="Коментар"
-          ></textarea>
-        </label>
-        <fieldset>
+          </div>
+          <label>
+            Коментар
+            <textarea
+              data-input="comment"
+              type="textarea"
+              placeholder="Коментар"
+            ></textarea>
+          </label>
+          <div class="individual-part-two open-modal">
+             <fieldset>
           <legend class="individual-checkbox-title">Додаткові послуги:</legend>
           <label class="individual-checkbox-label">
-            <input type="checkbox" />
+            <input type="checkbox"  name="services-1"/>
             виїзний майстер-клас (допомога у підборі локації)
           </label>
           <label class="individual-checkbox-label">
-            <input type="checkbox" />
+            <input type="checkbox" name="services-2" />
             фуршет
           </label>
           <label class="individual-checkbox-label">
-            <input type="checkbox" />
+            <input type="checkbox"  name="services-3"/>
             тематичний майстер-клас
           </label>
           <label class="individual-checkbox-label">
-            <input type="checkbox" />
+            <input type="checkbox"  name="services-4"/>
             фотозона
           </label>
         </fieldset>
+          </div>
+        </div>
+        <button class="order-form-btn">Записатись</button>
+        <span class="loader"></span>
       </div>
-
-      <button class="order-form-btn">Записатись</button>
     </form>
   </div>
 </div>
@@ -583,5 +599,15 @@
   </div>
 </div>
 
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("esdUna1kvVIZHJdVN");
+      })();
+    </script>
   </body>
 </html>
