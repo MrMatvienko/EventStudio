@@ -14,8 +14,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
       crossorigin="anonymous"
     />
-    <script type="module" crossorigin src="/EventStudio/assets/main-VaFIH5Fg.js"></script>
-    <link rel="stylesheet" crossorigin href="/EventStudio/assets/main-uTTFd9AA.css">
+    <script type="module" crossorigin src="/EventStudio/assets/gift-CV0W0eYG.js"></script>
+    <link rel="modulepreload" crossorigin href="/EventStudio/assets/style-CX6ymeZe.js">
+    <link rel="stylesheet" crossorigin href="/EventStudio/assets/style-Dy-C1uxq.css">
   </head>
   <body>
     <header class="header">
@@ -163,59 +164,98 @@
 </footer>
 
 
-    <div class="order">
+    <div class="order" data-page="gift">
   <div class="order-container">
-    <svg class="order-form-close icon-close">
+    <svg class="icon-close order-form-close">
       <use href="/EventStudio/assets/sprite-Bo6Exomw.svg#icon-close"></use>
     </svg>
     <h2 class="order-title">Подарунковий сертифікат</h2>
 
     <form class="form-wraper">
       <div class="form-group">
-        <select class="form-select" name="select">
-          <option value="" disabled selected>Оберіть майстер-клас</option>
-          <option value="">Свічеваріння</option>
-          <option value="">Флористика</option>
-          <option value="">Фактурна картина</option>
-          <option value="">Розпис шопера</option>
-          <option value="">Макраме</option>
-          <option value="">Медова свічка</option>
-          <option value="">Аромамішечок</option>
-          <option value="">Розпис столових свічок</option>
-          <option value="">Імбирне печиво</option>
-          <option value="">Гіпсові фігури</option>
-          <option value="">Бенто-тортик</option>
-        </select>
-        <label>
-          Ім’я
-          <input id="name-order" type="text" placeholder="Ім’я" required />
-        </label>
-        <label>
-          Номер телефону
-          <input id="tell-order" type="tel" placeholder="+38 000 000 00 00" />
-        </label>
-        <label>
-          Нік в телеграм
-          <input id="ikname-order" type="text" placeholder="@Olgar56" />
-        </label>
-        <label>
-          На чиє ім’я сертифікат
-          <input id="gift-name-order" type="text" placeholder="Оленці" />
-        </label>
-        <label>
-          Коментар
-          <textarea
-            id="coment-order"
-            type="textarea"
-            placeholder="Коментар"
-          ></textarea>
-        </label>
-      </div>
+        <div class="form-subwraper">
+          <select class="form-select" name="select">
+            <option value="" disabled selected>Оберіть майстер-клас</option>
+            <option value="Свічеваріння">Свічеваріння</option>
+            <option value="Флористика">Флористика</option>
+            <option value="Фактурна картина">Фактурна картина</option>
+            <option value="Розпис шопера">Розпис шопера</option>
+            <option value="Макраме">Макраме</option>
+            <option value="Медова свічка">Медова свічка</option>
+            <option value="Аромамішечок">Аромамішечок</option>
+            <option value="Розпис столових свічок">
+              Розпис столових свічок
+            </option>
+            <option value="Імбирне печиво">Імбирне печиво</option>
+            <option value="Гіпсові фігури">Гіпсові фігури</option>
+            <option value="Бенто-тортик">Бенто-тортик</option>
+          </select>
+          <label>
+            Ім’я
+            <input data-input="name" type="text" placeholder="Ім’я" required />
+          </label>
+          <label>
+            Номер телефону
+            <input
+              data-input="tell"
+              type="tel"
+              placeholder="+38 000 000 00 00"
+              required
+            />
+          </label>
+          <label>
+            Нік в телеграм
+            <input data-input="telegram" type="text" placeholder="@Olgar56" />
+          </label>
+          <label>
+            На чиє ім’я сертифікат
+            <input data-input="from_name" type="text" placeholder="Оленці" />
+          </label>
 
-      <button class="order-form-btn">Записатись</button>
+          <label>
+            Коментар
+            <textarea
+              data-input="comment"
+              type="textarea"
+              placeholder="Коментар"
+            ></textarea>
+          </label>
+        </div>
+        <button class="order-form-btn">Записатись</button>
+        <span class="loader"></span>
+      </div>
     </form>
   </div>
 </div>
+
+    <div class="succes">
+  <div class="succes-modal">
+    <svg class="icon-close">
+      <use href="/EventStudio/assets/sprite-Bo6Exomw.svg#icon-close"></use>
+    </svg>
+    <p class="succes-title">Дякуємо, що обрали нас!</p>
+    <p class="succes-title">Ми з вами зв’яжемося зовсім скоро</p>
+    <p class="succes-text">
+      Хай цей день принесе вам багато усмішок, а для більшого натхнення –
+      підписуйтесь на нас
+    </p>
+    <a href="https://www.instagram.com/kvitnu_z_namu.rv/?igsh=djZmd2ZmYzdpMWc4">
+      <svg class="succes-instagram-icon">
+        <use href="/EventStudio/assets/sprite-Bo6Exomw.svg#icon-instagram"></use>
+      </svg>
+    </a>
+  </div>
+</div>
+
 
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("esdUna1kvVIZHJdVN");
+      })();
+    </script>
   </body>
 </html>
