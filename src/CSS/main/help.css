@@ -84,8 +84,13 @@
   border-radius: 15px;
   max-width: 361px;
   width: 100%;
+  max-height: 1418px;
   height: calc(100% - 104px);
-  background: white;
+  background: url(/image/modal/back-moda-order-mob.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -204,6 +209,14 @@
 @media screen and (min-width: 1440px) {
   .help-test-wraper {
     max-width: 608px;
+    width: 100%;
+    max-height: 1538px;
+    height: calc(100% - 104px);
+    background: url(/image/modal/back-modal-order.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    background-color: white;
   }
   .help-test-wraper::-webkit-scrollbar {
     width: 5px;
@@ -217,7 +230,8 @@
   .test-title {
     font-family: var(--second-family);
     font-size: 24px;
-    margin-bottom: 52px;
+    margin-top: 16px;
+    margin-bottom: 32px;
   }
   .help-form legend {
     font-size: 20px;
