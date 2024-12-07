@@ -113,8 +113,8 @@
   font-size: 18px;
   line-height: 1.5;
 }
-.form-wraper input,
-.form-wraper textarea {
+.form-subwraper input,
+.form-subwraper textarea {
   border: 1px solid var(--grey-800);
   border-radius: 7px;
   height: 46px;
