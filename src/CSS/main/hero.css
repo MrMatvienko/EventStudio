@@ -42,7 +42,7 @@
   line-height: 150%;
   letter-spacing: 0.02em;
   color: var(--black);
-  margin-bottom: 32px;
+  margin-bottom: 62px;
 }
 .hero-btn {
   font-size: 20px;
@@ -51,7 +51,7 @@
   border: none;
   width: 224px;
   height: 70px;
-  padding: 25px 10px;
+  padding: 15px 10px;
   box-shadow: 1px 1px 4px 1px rgba(45, 50, 50, 0.31);
   background: var(--purple);
   cursor: pointer;
@@ -89,9 +89,10 @@
   }
   .hero-text {
     font-size: 24px;
-    margin-bottom: 44px;
+    margin-bottom: 84px;
   }
   .hero-btn {
     width: 292px;
+    padding: 25px 15px;
   }
 }
