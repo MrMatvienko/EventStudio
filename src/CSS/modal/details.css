@@ -32,10 +32,9 @@
   scroll-behavior: smooth;
 }
 .modal-wrpaer::-webkit-scrollbar {
-  width: 3px;
+  width: 5px;
 }
 .modal-wrpaer::-webkit-scrollbar-track {
-  background: var(--grey-background);
   border-radius: 10px;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -118,8 +117,10 @@
 }
 @media screen and (min-width: 1440px) {
   .modal-wrpaer {
-    max-width: 1030px;
+    max-width: 942px;
     width: 100%;
+    max-height: 764px;
+    height: calc(100% - 144px);
     background: url(/image/modal/detail-back.png);
     background-repeat: no-repeat;
     background-position: bottom right;
@@ -157,7 +158,7 @@
     max-width: 560px;
   }
   .details-skills-container {
-    margin-bottom: 64px;
+    margin-bottom: 48px;
   }
   .skills-list {
     max-width: 556px;
