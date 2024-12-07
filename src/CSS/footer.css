@@ -35,6 +35,10 @@
 .footer-link {
   font-size: 16px;
   color: var(--white);
+  transition: all 400ms ease;
+}
+.footer-link:hover {
+  color: var(--pink-back-btn);
 }
 
 .footer-text {
