@@ -4,7 +4,7 @@
 @media screen and (min-width: 1440px) {
   .individual-info {
     display: flex;
-    background: url(/image/individual/background-ind-info.png);
+    background: url(/image/back-info.png);
     background-position: top center;
     background-size: contain;
     background-repeat: repeat;

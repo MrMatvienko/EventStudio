@@ -1,10 +1,17 @@
 <section class="individual-hero">
   <div class="individual-hero-wraper container">
-    <img
-      class="individual-img-mob"
-      src="/image/individual/ind-hero-mob.jpg"
-      alt="litle girl"
-    />
+    <picture>
+      <source
+        type="image/webp"
+        srcset="/image/individual/ind-hero-mob-webp.webp"
+      />
+      <source type="image/jpeg" srcset="/image/individual/ind-hero-mob.jpg" />
+      <img
+        class="individual-img-mob"
+        src="/image/individual/ind-hero-mob.jpg"
+        alt="little girl"
+      />
+    </picture>
     <h2 class="individual-title">Індивідуальний майстер-клас</h2>
     <div class="individual-content">
       <div class="individual-text-container">
@@ -32,11 +39,18 @@
         </div>
         <button class="ind-btn-mod">Залишити заявку</button>
       </div>
-      <img
-        class="individual-img"
-        src="/image/individual/ind-hero.jpg"
-        alt="litle girl"
-      />
+      <picture>
+        <source
+          type="image/webp"
+          srcset="/image/individual/ind-hero-webp.webp"
+        />
+        <source type="image/jpeg" srcset="/image/individual/ind-hero.jpg" />
+        <img
+          class="individual-img"
+          src="/image/individual/ind-hero.jpg"
+          alt="little girl"
+        />
+      </picture>
     </div>
   </div>
 </section>
