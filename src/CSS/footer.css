@@ -53,6 +53,10 @@
   width: 30px;
   height: 30px;
   fill: var(--white);
+  transition: all 400ms ease;
+}
+.footer-icon:hover {
+  fill: var(--pink-back-btn);
 }
 @media screen and (min-width: 1440px) {
   .footer {
