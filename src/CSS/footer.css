@@ -6,7 +6,12 @@
   background: var(--grey-footer);
   padding: 40px 35px;
 }
-
+.footer-wraper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .footer-title {
   font-family: var(--second-family);
   font-size: 26px;
@@ -23,6 +28,7 @@
 .footer-wraper-list {
   display: flex;
   flex-direction: column;
+  width: 100%;
   gap: 32px;
   margin-bottom: 48px;
 }
@@ -65,6 +71,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: unset;
+    width: unset;
     gap: 150px;
     margin-bottom: 72px;
   }

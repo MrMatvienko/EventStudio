@@ -1,6 +1,6 @@
 .help {
   position: relative;
-  background: #f1f1f1;
+  background: var(--grey-background);
 }
 .help-wraper {
   display: flex;
