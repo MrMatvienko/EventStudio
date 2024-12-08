@@ -106,6 +106,12 @@ if (openTest) {
     testModal.classList.remove("is-hidden");
     document.body.style.overflow = "hidden";
   });
+  testModal.addEventListener("click", (event) => {
+    if (!event.target.closest(".help-test-wraper")) {
+      testModal.classList.add("is-hidden");
+      document.body.style.overflow = "";
+    }
+  });
   closeTest.addEventListener("click", function () {
     testModal.classList.add("is-hidden");
     document.body.style.overflow = "";
