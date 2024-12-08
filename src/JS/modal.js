@@ -3,6 +3,7 @@ export function modalInit() {
   const modal = document.querySelector(".order");
   const closeBtn = document.querySelector(".order-form-close");
   const modalTitle = document.querySelector(".order-title");
+
   openBtn.forEach((item) => {
     item.addEventListener("click", function () {
       const card = item.closest(".event-list-item");
@@ -11,6 +12,12 @@ export function modalInit() {
       document.body.style.overflow = "hidden";
       modal.classList.add("open-modal");
     });
+  });
+  modal.addEventListener("click", (event) => {
+    if (!event.target.closest(".order-container")) {
+      document.body.style.overflow = "";
+      modal.classList.remove("open-modal");
+    }
   });
   closeBtn.addEventListener("click", function () {
     document.body.style.overflow = "";
@@ -34,6 +41,7 @@ export function modalMasterInit() {
       modal.classList.add("open-modal");
     });
   });
+
   closeBtn.addEventListener("click", function () {
     document.body.style.overflow = "";
     modal.classList.remove("open-modal");
