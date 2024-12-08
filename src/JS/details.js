@@ -81,6 +81,12 @@ export function initDetails() {
     const closeBtn = document.querySelector(".icon-close");
     closeBtn.addEventListener("click", closeModal);
 
+    detailsModal.addEventListener("click", (event) => {
+      if (!event.target.closest(".modal-wrapper")) {
+        closeModal();
+      }
+    });
+
     const openOrder = document.querySelector(".detail-btn");
     if (openOrder) {
       const modal = document.querySelector(".order");
