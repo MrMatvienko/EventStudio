@@ -32,7 +32,7 @@ export function sendTest() {
       loader.classList.add("open-modal");
 
       emailjs
-        .send("service_zo5qi0m", "template_o9gerui", params)
+        .send("service_c3fimkf", "template_2i1mfr8", params)
         .then(function (res) {
           if (res.status === 200) {
             testModal.classList.add("is-hidden");

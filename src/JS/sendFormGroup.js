@@ -1,6 +1,5 @@
 export function groupModal() {
   const modal = document.querySelector(".order");
-  const mainModal = document.querySelector(".main-order");
   const groupform = document.querySelector(".form-wraper");
   const sendBtn = document.querySelector(".order-form-btn");
   const succesModal = document.querySelector(".succes");
@@ -11,8 +10,10 @@ export function groupModal() {
       event.preventDefault();
 
       const selectElement = document.querySelector(".form-select");
-      const selectedValue = selectElement.value;
-
+      let selectedValue;
+      if (selectElement) {
+        selectedValue = selectElement.value;
+      }
       const getSelectedServices = () => {
         const servicesContainer = document.querySelector(
           ".individual-part-two"
@@ -57,7 +58,7 @@ export function groupModal() {
           groupform.querySelector('[data-input="tell"]')?.value || "",
         group_telegram:
           groupform.querySelector('[data-input="telegram"]')?.value || "",
-        master_class: title,
+        title: title,
         group_data: groupform.querySelector('[data-input="date"]')?.value || "",
         from_name:
           groupform.querySelector('[data-input="from_name"]')?.value || "",
@@ -73,7 +74,7 @@ export function groupModal() {
       sendBtn.disabled = true;
       loader.classList.add("open-modal");
       emailjs
-        .send("service_zo5qi0m", "template_1f35ezk", params)
+        .send("service_c3fimkf", "template_wtxtzs8", params)
         .then(function (res) {
           if (res.status === 200) {
             modal.classList.remove("open-modal");
