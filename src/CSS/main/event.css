@@ -143,18 +143,6 @@
   background-position: center;
   background-size: cover;
 }
-.img-9 {
-  background: linear-gradient(
-      180deg,
-      rgba(50, 49, 45, 0.4) 0%,
-      rgba(25, 25, 23, 0) 50%,
-      rgba(50, 49, 45, 0.4) 100%
-    ),
-    url("/image/main/event/event-9.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
 .img-10 {
   background: linear-gradient(
       180deg,
@@ -163,18 +151,6 @@
       rgba(50, 49, 45, 0.4) 100%
     ),
     url("/image/main/event/event-10.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.img-11 {
-  background: linear-gradient(
-      180deg,
-      rgba(50, 49, 45, 0.4) 0%,
-      rgba(25, 25, 23, 0) 50%,
-      rgba(50, 49, 45, 0.4) 100%
-    ),
-    url("/image/main/event/event-11.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
