@@ -43,6 +43,7 @@
 }
 .header-number-link {
   display: flex;
+  gap: 5px;
   font-size: 16px;
   line-height: 1.5;
   align-items: center;
@@ -141,10 +142,20 @@
 .mobile-bar-item:last-child {
   margin-top: 40px;
 }
-.mobile-bar-item:hover a {
-  color: #931ed6;
-}
 
+.header-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.mobile-tell-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
 @media screen and (min-width: 1440px) {
   .header {
     height: 118px;
