@@ -28,7 +28,7 @@
   color: var(--pink-text);
   margin-bottom: 16px;
 }
-.info-wraper ul p {
+.info-wraper-text {
   font-size: 16px;
   line-height: 1.5;
   color: var(--black);
@@ -41,7 +41,7 @@
   align-items: center;
   margin-bottom: 18px;
 }
-.info-quote p {
+.info-quote-text {
   font-family: var(--third-family);
   font-size: 24px;
   line-height: 1.2;
@@ -50,7 +50,7 @@
 }
 .info-dab {
   position: absolute;
-  top: -22px;
+  top: -42px;
   left: 0;
   max-width: 260px;
   width: 100%;
@@ -80,6 +80,58 @@
   bottom: 0;
   right: 0;
 }
+@media screen and (min-width: 834px) {
+  .info {
+    margin-top: unset;
+    height: 998px;
+    background: url(/image/main/info/info-back-tab.png);
+    background-repeat: repeat;
+    background-position: top center;
+    background-size: contain;
+  }
+  .info-wraper {
+    max-width: 834px;
+  }
+  .info-wraper ul {
+    flex-direction: unset;
+    gap: 72px;
+  }
+  .info-wraper ul h2 {
+    font-weight: 700;
+    font-size: 24px;
+  }
+  .info-quote {
+    max-width: 597px;
+    width: 100%;
+    margin-bottom: 72px;
+  }
+  .info-dab {
+    position: absolute;
+    top: -32px;
+    left: -55px;
+    max-width: 435px;
+    width: 100%;
+    height: 125px;
+    background: url(/image/main/info/info-dab-tab.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+  }
+  .info-quote-text {
+    font-size: 32px;
+    max-width: 597px;
+    width: 100%;
+  }
+  .info-wraper-text {
+    max-width: 285px;
+    width: 100%;
+  }
+  .info-wraper-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 @media screen and (min-width: 1440px) {
   .info {
     margin-top: 40px;
@@ -100,6 +152,8 @@
   .info-wraper-container {
     width: 100%;
     display: flex;
+    flex-direction: unset;
+    align-items: unset;
     justify-content: space-between;
     gap: 56px;
     padding-left: 20px;
@@ -110,12 +164,13 @@
     justify-content: flex-start;
     margin-bottom: 92px;
   }
-  .info-quote p {
+  .info-quote-text {
     font-size: 32px;
     line-height: 1.2;
     max-width: 597px;
   }
   .info-wraper ul {
+    flex-direction: column;
     gap: 112px;
   }
   .info-dab {
