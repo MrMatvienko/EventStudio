@@ -16,11 +16,11 @@
 }
 .hero-wraper {
   position: absolute;
-  top: 47%;
-  left: 7%;
+  bottom: -25%;
+  right: -50%;
   border-radius: 50%;
   width: 555px;
-  height: 533px;
+  height: 555px;
   background-color: rgb(229, 227, 228, 0.7);
 }
 .hero-wraper-text {
@@ -60,6 +60,29 @@
 .hero-btn:hover {
   background: var(--background-btn);
 }
+
+@media screen and (min-width: 834px) {
+  .hero {
+    height: 1044px;
+    background-image: url(../../image/main/hero/hero-tab.png);
+  }
+  .hero-conrainer {
+    max-width: 754px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .hero-wraper {
+    bottom: -20%;
+    right: -40%;
+    width: 930px;
+    height: 930px;
+  }
+  .hero-wraper-text {
+    padding-top: 339px;
+    padding-left: 78px;
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .hero {
     height: 970px;
