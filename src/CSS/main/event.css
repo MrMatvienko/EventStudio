@@ -229,6 +229,42 @@
   background: var(--background-btn);
   color: var(--white);
 }
+@media screen and (min-width: 834px) {
+  .event-wraper::before {
+    content: "";
+    top: 35px;
+    left: 0;
+    max-width: 580px;
+    width: 100%;
+    height: 139px;
+    position: absolute;
+    background: url(/image/main/event/event-dab.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    z-index: -1;
+  }
+  .event-list {
+    display: flex;
+    flex-direction: unset;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+  }
+  .event-quote {
+    font-size: 32px;
+    max-width: 583px;
+    width: 100%;
+  }
+  .event-list-item {
+    width: calc((100% - 25px) / 2);
+    height: 649px;
+  }
+  .event-list-img {
+    max-width: 364px;
+    width: 100%;
+    height: 451px;
+  }
+}
 @media screen and (min-width: 1440px) {
   .event-wraper {
     position: relative;
@@ -238,16 +274,10 @@
     margin-bottom: 32px;
   }
   .event-wraper::before {
-    content: "";
     top: 60px;
     left: 40px;
     max-width: 720px;
     height: 139px;
-    position: absolute;
-    background: url(/image/main/event/event-dab.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    z-index: -1;
   }
   .event-quote {
     font-size: 32px;
@@ -263,6 +293,7 @@
   .event-list-item {
     width: calc((100% - 234px) / 2);
   }
+
   .event-list-img {
     max-width: 503px;
     width: 100%;
