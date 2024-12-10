@@ -65,7 +65,38 @@
 .ind-btn-mod:hover {
   background: var(--background-btn);
 }
+@media screen and (min-width: 834px) {
+  .individual-hero {
+    background: url(/image/master-back-tab.png);
+    background-position: top center;
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-color: var(--grey-background);
+  }
+  .individual-content {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+  .individual-text-container {
+    align-items: flex-start;
+    width: 365px;
+  }
+  .individual-title {
+    font-size: 36px;
+    max-width: 513px;
+    margin-bottom: 64px;
+  }
 
+  .individual-img {
+    margin-top: 24px;
+    display: flex;
+    border-radius: 15px;
+  }
+  .individual-img-mob {
+    display: none;
+  }
+}
 @media screen and (min-width: 1440px) {
   .individual-hero {
     background: url(/image/background-event-item.png);
@@ -77,15 +108,7 @@
   .individual-hero-wraper {
     padding-bottom: 121px;
   }
-  .individual-title {
-    font-size: 36px;
-    margin-top: 80px;
-    max-width: 513px;
-    margin-bottom: 64px;
-  }
   .individual-content {
-    display: flex;
-    justify-content: center;
     align-items: center;
     gap: 177px;
   }
@@ -93,15 +116,10 @@
     align-items: flex-start;
     width: 560px;
   }
+  .individual-img {
+    margin-top: 0;
+  }
   .text-bolt {
     margin-bottom: 48px;
-  }
-
-  .individual-img {
-    display: flex;
-    border-radius: 15px;
-  }
-  .individual-img-mob {
-    display: none;
   }
 }
