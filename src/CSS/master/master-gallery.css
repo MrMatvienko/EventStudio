@@ -86,6 +86,19 @@
 .master-item-description {
   margin-bottom: 16px;
 }
+@media screen and (min-width: 834px) {
+  .master-gallery-list {
+    width: 540px;
+    gap: 40px;
+  }
+  .master-item-text {
+    padding-left: 56px;
+    padding-right: 38px;
+  }
+  .master-item-title {
+    font-size: 32px;
+  }
+}
 @media screen and (min-width: 1440px) {
   .master-gallery-title {
     font-size: 24px;
