@@ -64,11 +64,21 @@
             </ul>
           </div>
         </div>
-        <img
-          class="master-img"
-          src="/image/macrame/macrame-hero.jpg"
-          alt="candle and flowers"
-        />
+        <picture>
+          <source
+            srcset="/image/macrame/macrame-hero-tab.jpg"
+            media="(max-width: 1439.98px)"
+          />
+          <source
+            srcset="/image/macrame/macrame-hero.jpg"
+            media="(max-width: 1440px)"
+          />
+          <img
+            class="master-img"
+            src="/image/macrame/macrame-hero.jpg"
+            alt="candle and flowers"
+          />
+        </picture>
       </div>
     </div>
   </div>
