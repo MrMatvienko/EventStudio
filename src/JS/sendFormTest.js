@@ -22,7 +22,7 @@ export function sendTest() {
       });
 
       const params = {
-        from_name: document.getElementById("form_name").value,
+        group_name: document.getElementById("form_name").value,
         phone_number: document.getElementById("phone").value,
         telegram: document.getElementById("telegram").value,
         ...questions,

@@ -22,6 +22,9 @@
               data-input="tell"
               type="tel"
               placeholder="+38 000 000 00 00"
+              pattern="^\+?[0-9\s]{1,13}$"
+              maxlength="13"
+              title="Введіть тільки цифри, максимум 13 символів, починаючи з '+' (опціонально)."
               required
             />
           </label>
