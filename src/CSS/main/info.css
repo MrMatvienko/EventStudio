@@ -62,16 +62,17 @@
 }
 .info-wrpar-img {
   border-radius: 20px;
-  width: 181px;
+  max-width: 181px;
+  width: 100%;
   height: 210px;
   margin-bottom: 24px;
 }
 .info-container-img {
   position: relative;
-  max-width: 322px;
+  max-width: 335px;
   width: 100%;
   height: 327px;
-  padding-left: 13px;
+
   padding-top: 24px;
   padding-bottom: 24px;
 }
