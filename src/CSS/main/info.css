@@ -193,7 +193,7 @@
   }
   .info-wrpar-img {
     border-radius: 20px;
-    width: 261px;
+    max-width: 261px;
     height: 330px;
   }
 }
