@@ -85,16 +85,21 @@ function toggleAnswer(answer, arrow) {
   }
 }
 
-/*-------------Arrow--SELECTION---------------*/
-document.querySelectorAll(".selection-icon").forEach((icon) =>
-  icon.addEventListener("click", () => {
-    const sublist = icon
-      .closest(".selection-list-item")
-      ?.querySelector(".selection-sublist");
-    sublist?.classList.toggle("active");
-    icon.classList.toggle("active");
-  })
-);
+/*-------------Arrow--SELECTION--INDIVIDUAL-PAGE-------------*/
+document.querySelectorAll(".selection-list-item").forEach((item) => {
+  item.addEventListener("click", (event) => {
+    const icon = item.querySelector(".selection-icon");
+    const sublist = item.querySelector(".selection-sublist");
+
+    if (event.target === icon) {
+      icon.classList.toggle("active");
+      sublist?.classList.toggle("active");
+    } else {
+      icon?.classList.toggle("active");
+      sublist?.classList.toggle("active");
+    }
+  });
+});
 
 /*------------------TEST-TOGGLE-BUTTON------------------- */
 
