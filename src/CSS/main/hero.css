@@ -33,6 +33,7 @@
   font-family: var(--second-family);
   font-size: 26px;
   margin-bottom: 16px;
+  font-weight: 400;
 }
 .hero-text {
   font-family: var(--second-family);
