@@ -251,13 +251,20 @@
     width: 100%;
   }
   .event-list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: calc((100% - 25px) / 2);
     height: 649px;
+  }
+  .event-descriptions {
+    margin-bottom: unset;
   }
   .event-list-img {
     max-width: 364px;
     width: 100%;
     height: 451px;
+    margin-bottom: unset;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -293,10 +300,12 @@
     max-width: 503px;
     width: 100%;
     height: 496px;
+    margin-bottom: 16px;
   }
   .event-descriptions {
     width: 452px;
     height: 72px;
+    margin-bottom: 24px;
   }
   .event-btn {
     max-width: 224px;
