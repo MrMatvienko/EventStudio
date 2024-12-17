@@ -1,6 +1,6 @@
 .hero {
   height: 720px;
-  background: url(/image/main/hero/hero-mob.jpg) no-repeat top center / cover;
+  background: url(/image/main/hero/hero-mob.webp) no-repeat top center / cover;
   overflow: hidden;
 }
 .hero-container {
@@ -62,7 +62,7 @@
 @media screen and (min-width: 834px) {
   .hero {
     height: 1044px;
-    background: url(/image/main/hero/hero-tab.png) no-repeat top center / cover;
+    background: url(/image/main/hero/hero-tab.webp) no-repeat top center / cover;
   }
   .hero-container {
     max-width: 754px;
@@ -84,7 +84,7 @@
 @media screen and (min-width: 1440px) {
   .hero {
     height: 970px;
-    background: url(/image/main/hero/hero.jpg) no-repeat top center / cover;
+    background: url(/image/main/hero/hero.webp) no-repeat top center / cover;
   }
   .hero-container {
     max-width: 1180px;
