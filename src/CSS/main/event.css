@@ -53,10 +53,7 @@
       rgba(25, 25, 23, 0) 50%,
       rgba(50, 49, 45, 0.4) 100%
     ),
-    url("/image/main/event/event-1.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    url("/image/main/event/event-1.png") no-repeat center / cover;
 }
 .img-2 {
   background: linear-gradient(
@@ -65,10 +62,7 @@
       rgba(25, 25, 23, 0) 50%,
       rgba(50, 49, 45, 0.4) 100%
     ),
-    url("/image/main/event/event-2.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    url("/image/main/event/event-2.png") no-repeat center / cover;
 }
 .img-3 {
   background: linear-gradient(
@@ -77,18 +71,7 @@
       rgba(25, 25, 23, 0) 50%,
       rgba(50, 49, 45, 0.4) 100%
     ),
-    url("/image/main/event/event-3.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.img-4 {
-  background: linear-gradient(
-    180deg,
-    rgba(50, 49, 45, 0.4) 0%,
-    rgba(25, 25, 23, 0) 50%,
-    rgba(50, 49, 45, 0.4) 100%
-  );
+    url("/image/main/event/event-3.png") no-repeat center / cover;
 }
 .img-5 {
   background: linear-gradient(
@@ -97,10 +80,7 @@
       rgba(25, 25, 23, 0) 50%,
       rgba(50, 49, 45, 0.4) 100%
     ),
-    url("/image/main/event/event-5.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    url("/image/main/event/event-5.png") no-repeat center / cover;
 }
 .img-6 {
   background: linear-gradient(
@@ -109,10 +89,7 @@
       rgba(25, 25, 23, 0) 50%,
       rgba(50, 49, 45, 0.4) 100%
     ),
-    url("/image/main/event/event-6.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    url("/image/main/event/event-6.png") no-repeat center / cover;
 }
 .img-7 {
   background: linear-gradient(
@@ -121,10 +98,7 @@
       rgba(25, 25, 23, 0) 50%,
       rgba(50, 49, 45, 0.4) 100%
     ),
-    url("/image/main/event/event-7.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    url("/image/main/event/event-7.png") no-repeat center / cover;
 }
 .img-8 {
   background: linear-gradient(
@@ -133,10 +107,7 @@
       rgba(25, 25, 23, 0) 50%,
       rgba(50, 49, 45, 0.4) 100%
     ),
-    url("/image/main/event/event-8.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    url("/image/main/event/event-8.png") no-repeat center / cover;
 }
 .img-10 {
   background: linear-gradient(
@@ -145,10 +116,7 @@
       rgba(25, 25, 23, 0) 50%,
       rgba(50, 49, 45, 0.4) 100%
     ),
-    url("/image/main/event/event-10.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    url("/image/main/event/event-10.png") no-repeat center / cover;
 }
 .img-12 {
   background: linear-gradient(
@@ -157,10 +125,7 @@
       rgba(25, 25, 23, 0) 50%,
       rgba(50, 49, 45, 0.4) 100%
     ),
-    url("/image/main/event/event-12.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    url("/image/main/event/event-12.png") no-repeat center / cover;
 }
 .event-item-info {
   padding-top: 16px;
