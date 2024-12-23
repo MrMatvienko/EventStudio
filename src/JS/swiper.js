@@ -8,7 +8,6 @@ export function initSwiper() {
     modules: [Pagination],
     slidesPerView: 2,
     slidesPerGroup: 2,
-    spaceBetween: 8,
     grabCursor: true,
     loop: true,
     pagination: {
