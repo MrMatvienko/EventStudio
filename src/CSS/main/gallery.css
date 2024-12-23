@@ -16,6 +16,7 @@
 }
 .gallery-title {
   font-family: var(--second-family);
+  font-weight: 400;
   font-size: 36px;
   color: var(--pink-text);
   margin-bottom: 8px;
