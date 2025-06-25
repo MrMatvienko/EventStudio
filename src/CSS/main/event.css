@@ -64,15 +64,6 @@
     ),
     url("/image/main/event/event-2.png") no-repeat center / cover;
 }
-.img-3 {
-  background: linear-gradient(
-      180deg,
-      rgba(50, 49, 45, 0.4) 0%,
-      rgba(25, 25, 23, 0) 50%,
-      rgba(50, 49, 45, 0.4) 100%
-    ),
-    url("/image/main/event/event-3.png") no-repeat center / cover;
-}
 
 .img-4 {
   background: linear-gradient(
