@@ -8,13 +8,12 @@ export default defineConfig({
   root: "src",
   build: {
     rollupOptions: {
-      input: globSync("./src/**/index.html"), // ✅ читає всі сторінки як /about/, /contact/
+      input: globSync("./src/*.html"),
     },
     outDir: "../dist",
   },
-  plugins: [injectHTML(), FullReload(["./src/**/*.html"])],
+  plugins: [injectHTML(), FullReload(["./src/**/**.html"])],
 });
-
 // import { defineConfig } from "vite";
 // import { sync as globSync } from "glob";
 // import injectHTML from "vite-plugin-html-inject";
@@ -25,9 +24,9 @@ export default defineConfig({
 //   root: "src",
 //   build: {
 //     rollupOptions: {
-//       input: globSync("./src/*.html"),
+//       input: globSync("./src/**/index.html"),
 //     },
 //     outDir: "../dist",
 //   },
-//   plugins: [injectHTML(), FullReload(["./src/**/**.html"])],
+//   plugins: [injectHTML(), FullReload(["./src/**/*.html"])],
 // });
