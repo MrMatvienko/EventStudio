@@ -1,34 +1,3 @@
-.help {
-  position: relative;
-  background: var(--grey-background);
-}
-.help-wraper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 71px;
-  padding-bottom: 60px;
-}
-.help-title {
-  font-family: var(--second-family);
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 0.01em;
-  color: var(--pink);
-  margin-bottom: 48px;
-}
-.help-text {
-  max-width: 361px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.5;
-  text-align: center;
-  color: var(--black);
-  margin-bottom: 40px;
-}
 .help-btn {
   font-family: var(--font-family);
   font-weight: 400;
@@ -38,7 +7,7 @@
   border: none;
   max-width: 224px;
   width: 100%;
-  height: 70px;
+  height: 58px;
   box-shadow: 1px 1px 4px 1px rgba(45, 50, 50, 0.31);
   background: var(--purple);
   cursor: pointer;
@@ -46,22 +15,6 @@
 }
 .help-btn:hover {
   background: var(--background-btn);
-}
-@media screen and (min-width: 1440px) {
-  .help-wraper {
-    padding-bottom: 80px;
-    padding-top: 79px;
-  }
-  .help-title {
-    font-size: 24px;
-
-    margin-bottom: 56px;
-  }
-  .help-text {
-    max-width: 513px;
-    font-size: 20px;
-    margin-bottom: 48px;
-  }
 }
 /*------------------------TEST-MODAL------------------------*/
 
@@ -154,14 +107,12 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  max-width: 365px;
   width: 100%;
   margin-bottom: 10px;
 }
 .help-form-data input {
   border: 1px solid var(--grey-800);
   border-radius: 7px;
-  max-width: 300px;
   height: 40px;
   padding: 0px 16px;
   background: rgba(255, 255, 255, 0.85);
@@ -177,11 +128,6 @@
   display: flex;
   align-items: center;
   gap: 8px;
-}
-.help-answer-wraper input[type="checkbox"] {
-  cursor: pointer;
-  border: 1px solid var(--grey-800);
-  background: rgba(255, 255, 255, 0.85);
 }
 .help-answer-title {
   font-weight: 600;
@@ -205,7 +151,26 @@
 .test-btn:hover {
   background: var(--background-btn);
 }
-
+.help-select {
+  width: 100%;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid var(--grey-800);
+  border-radius: 7px;
+  padding: 0px 12px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 1.15;
+  margin: 0;
+  color: var(--grey-800);
+}
+.help-fom-textarea {
+  border-radius: 7px;
+  padding: 16px 16px;
+  background: rgba(255, 255, 255, 0.85);
+  resize: none;
+}
 @media screen and (min-width: 1440px) {
   .help-test-wraper {
     max-width: 608px;
@@ -238,12 +203,10 @@
   }
   .help-form-data {
     font-size: 20px;
-    max-width: 365px;
     width: 100%;
     margin-bottom: 16px;
   }
   .help-form-data input {
-    width: 333px;
     height: 44px;
     background: rgba(255, 255, 255, 0.85);
   }

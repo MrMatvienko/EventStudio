@@ -129,6 +129,24 @@
     ),
     url("/image/main/event/event-12.png") no-repeat center / cover;
 }
+.img-13 {
+  background: linear-gradient(
+      180deg,
+      rgba(50, 49, 45, 0.4) 0%,
+      rgba(25, 25, 23, 0) 50%,
+      rgba(50, 49, 45, 0.4) 100%
+    ),
+    url("/image/main/event/event-13.png") no-repeat center / cover;
+}
+.img-14 {
+  background: linear-gradient(
+      180deg,
+      rgba(50, 49, 45, 0.4) 0%,
+      rgba(25, 25, 23, 0) 50%,
+      rgba(50, 49, 45, 0.4) 100%
+    ),
+    url("/image/main/event/event-14.png") no-repeat center / cover;
+}
 .event-item-info {
   padding-top: 16px;
   padding-left: 16px;

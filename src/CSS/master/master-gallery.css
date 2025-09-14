@@ -86,6 +86,18 @@
 .master-item-description {
   margin-bottom: 16px;
 }
+
+.macrame-shoper-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+.custom-margin {
+  margin-top: 12px;
+}
 @media screen and (min-width: 834px) {
   .master-gallery-list {
     width: 540px;

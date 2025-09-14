@@ -5,7 +5,6 @@
 @import url("./CSS/main/event.css");
 @import url("./CSS/main/gallery.css");
 @import url("./CSS/main/question.css");
-@import url("./CSS/main/help.css");
 @import url("./CSS/footer.css");
 
 @import url("./CSS/master/master-hero.css");
@@ -21,6 +20,7 @@
 @import url("./CSS/modal/order.css");
 @import url("./CSS/modal/succes.css");
 @import url("./CSS/loader/loader.css");
+@import url("./CSS/modal/help.css");
 
 @import url("./CSS/modal/selected.css");
 :root {

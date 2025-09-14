@@ -9,28 +9,25 @@ export function sendTest() {
     testForm.addEventListener("submit", function (event) {
       event.preventDefault();
 
-      const questions = {};
-      const fieldsets = document.querySelectorAll("fieldset");
-      fieldsets.forEach((fieldset, index) => {
-        const questionNumber = `question-${index + 1}`;
-        const checkboxes = fieldset.querySelectorAll(
-          `input[name="${questionNumber}"]:checked`
-        );
-        questions[questionNumber] = Array.from(checkboxes)
-          .map((checkbox) => checkbox.nextElementSibling.textContent.trim())
-          .join(", ");
-      });
-
+      // Збираємо дані з форми
       const params = {
-        group_name: document.getElementById("form_name").value,
-        phone_number: document.getElementById("phone").value,
-        telegram: document.getElementById("telegram").value,
-        ...questions,
+        name: document.getElementById("form_name").value,
+        phone: document.getElementById("phone").value,
+        city: document.getElementById("city").value,
+        post_type: testForm.querySelector(
+          'select[name="select"]:nth-of-type(1)'
+        ).value,
+        post_number: document.getElementById("mail").value,
+        payment: testForm.querySelector('select[name="select"]:nth-of-type(2)')
+          .value,
+        comment: testForm.querySelector(".help-fom-textarea").value,
       };
 
+      // Блокуємо кнопку і показуємо loader
       sendBtn.disabled = true;
       loader.classList.add("open-modal");
 
+      // Відправка через EmailJS
       emailjs
         .send("service_c3fimkf", "template_2i1mfr8", params)
         .then(function (res) {

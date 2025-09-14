@@ -1,0 +1,68 @@
+<div class="help-test is-hidden">
+  <div class="help-test-wraper">
+    <svg class="test-close-btn">
+      <use href="/image/sprite.svg#icon-close"></use>
+    </svg>
+    <h2 class="test-title">Набір «Зроби сумку сам»</h2>
+
+    <form class="help-form" method="POST" autocomplete="off" id="help-form">
+      <div class="help-form-wraper">
+        <label class="help-form-data">
+          П.І.Б.
+          <input
+            id="form_name"
+            type="text"
+            placeholder="Прізвище Ім’я"
+            required
+          />
+        </label>
+        <label class="help-form-data">
+          Номер телефону
+          <input
+            id="phone"
+            type="tel"
+            placeholder="+38 000 000 00 00"
+            pattern="^\+?[0-9\s]{1,13}$"
+            maxlength="13"
+            title="Введіть тільки цифри, максимум 13 символів, починаючи з '+' (опціонально)."
+            required
+          />
+        </label>
+        <label class="help-form-data">
+          Місто
+          <input id="city" type="text" placeholder="Місто" required />
+        </label>
+        <select class="help-select" name="select">
+          <option value="" disabled selected>Оберіть пошту</option>
+          <option value="Нова Пошта">Нова Пошта</option>
+          <option value="Укр Пошта">Укр Пошта</option>
+        </select>
+
+        <label class="help-form-data">
+          Номер пошти
+          <input
+            id="mail"
+            type="text"
+            placeholder="Номер пошти/індекс"
+            required
+          />
+        </label>
+        <select class="help-select" name="select">
+          <option value="" disabled selected>Спосіб оплати</option>
+          <option value="Картою">Картою на реквізити</option>
+          <option value="Післяплата">Післяплата</option>
+        </select>
+        <label class="help-form-data">
+          Коментар
+          <textarea
+            class="help-fom-textarea"
+            type="textarea"
+            placeholder="Коментар"
+          ></textarea>
+        </label>
+      </div>
+      <button class="test-btn" type="submit">Придбати</button>
+      <span class="loader"></span>
+    </form>
+  </div>
+</div>
