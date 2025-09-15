@@ -16,6 +16,7 @@
   border-radius: 15px;
   max-width: 361px;
   width: 100%;
+  max-height: 764px;
   background: url(/image/modal/detail-modal-back-mob.png);
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -123,7 +124,6 @@
   .modal-wrpaer {
     max-width: 942px;
     width: 100%;
-    max-height: 764px;
     background: url(/image/modal/detail-back.png);
     background-repeat: no-repeat;
     background-position: bottom right;
