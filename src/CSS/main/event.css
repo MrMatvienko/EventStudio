@@ -120,6 +120,17 @@
     ),
     url("/image/main/event/event-8.png") no-repeat center / cover;
 }
+
+.img-9 {
+  background: linear-gradient(
+      180deg,
+      rgba(50, 49, 45, 0.4) 0%,
+      rgba(25, 25, 23, 0) 50%,
+      rgba(50, 49, 45, 0.4) 100%
+    ),
+    url("/image/main/event/event-9.png") no-repeat center / cover;
+}
+
 .img-10 {
   background: linear-gradient(
       180deg,
@@ -155,6 +166,25 @@
       rgba(50, 49, 45, 0.4) 100%
     ),
     url("/image/main/event/event-14.png") no-repeat center / cover;
+}
+
+.img-15 {
+  background: linear-gradient(
+      180deg,
+      rgba(50, 49, 45, 0.4) 0%,
+      rgba(25, 25, 23, 0) 50%,
+      rgba(50, 49, 45, 0.4) 100%
+    ),
+    url("/image/main/event/event-15.png") no-repeat center / cover;
+}
+.img-16 {
+  background: linear-gradient(
+      180deg,
+      rgba(50, 49, 45, 0.4) 0%,
+      rgba(25, 25, 23, 0) 50%,
+      rgba(50, 49, 45, 0.4) 100%
+    ),
+    url("/image/main/event/event-16.png") no-repeat center / cover;
 }
 .event-item-info {
   padding-top: 16px;
